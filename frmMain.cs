@@ -57,7 +57,7 @@ namespace MysteryGuest_INC
                 "SERVER=108.167.174.76,3306;" +
                 "DATABASE=mg18_INC;" +
                 "UID=mg18_INC;" +
-                "PASSWORD=20cdc65001;");
+                "PASSWORD=;");
         //SQL
         SqlConnection sqlCon = new SqlConnection();
         //ODBC
@@ -1325,43 +1325,18 @@ namespace MysteryGuest_INC
             //If insertOrupdate = 0, we will do an update.
             if (blInsert == false)
             {
+                //We will using only 1 string this will look neat, and improves performance.
                 String NOAH = "UPDATE K_MONSTER SET iMoney =" + "'" + txtNoah.Text + "'" + "WHERE sSid =" + "'" + txtSsid.Text + "';";
-                String ITEM1 = "UPDATE K_MONSTER_ITEM SET iItem01 =" + "'" + txtItem1.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String ITEM2 = "UPDATE K_MONSTER_ITEM SET iItem02 =" + "'" + txtItem2.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String ITEM3 = "UPDATE K_MONSTER_ITEM SET iItem03 =" + "'" + txtItem3.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String ITEM4 = "UPDATE K_MONSTER_ITEM SET iItem04 =" + "'" + txtItem4.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String ITEM5 = "UPDATE K_MONSTER_ITEM SET iItem05 =" + "'" + txtItem5.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String RATE1 = "UPDATE K_MONSTER_ITEM SET sPersent01 =" + "'" + txtRate1.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String RATE2 = "UPDATE K_MONSTER_ITEM SET sPersent02 =" + "'" + txtRate2.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String RATE3 = "UPDATE K_MONSTER_ITEM SET sPersent03 =" + "'" + txtRate3.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String RATE4 = "UPDATE K_MONSTER_ITEM SET sPersent04 =" + "'" + txtRate4.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-                String RATE5 = "UPDATE K_MONSTER_ITEM SET sPersent05 =" + "'" + txtRate5.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
-
+                String completeUpdate = "UPDATE K_MONSTER_ITEM SET iItem01 ='" + txtItem1.Text + "',iItem02 ='" + txtItem2.Text + "',iItem03 ='" + txtItem3.Text + "',iItem04 ='" + txtItem4.Text + "',iItem05 ='" + txtItem5.Text + "',sPersent01 ='" + txtRate1.Text + "',sPersent02 ='" + txtRate2.Text + "',sPersent03 ='" + txtRate3.Text + "',sPersent04 ='" + txtRate4.Text + "',sPersent05 ='" + txtRate5.Text + "'" + "WHERE sIndex =" + "'" + txtSsid.Text + "';";
+               
                 OdbcCommand cmdNoah = new OdbcCommand(NOAH, odbcCon);
-                OdbcCommand cmdItem1 = new OdbcCommand(ITEM1, odbcCon);
-                OdbcCommand cmdItem2 = new OdbcCommand(ITEM2, odbcCon);
-                OdbcCommand cmdItem3 = new OdbcCommand(ITEM3, odbcCon);
-                OdbcCommand cmdItem4 = new OdbcCommand(ITEM4, odbcCon);
-                OdbcCommand cmdItem5 = new OdbcCommand(ITEM5, odbcCon);
-                OdbcCommand cmdRate1 = new OdbcCommand(RATE1, odbcCon);
-                OdbcCommand cmdRate2 = new OdbcCommand(RATE2, odbcCon);
-                OdbcCommand cmdRate3 = new OdbcCommand(RATE3, odbcCon);
-                OdbcCommand cmdRate4 = new OdbcCommand(RATE4, odbcCon);
-                OdbcCommand cmdRate5 = new OdbcCommand(RATE5, odbcCon);
-
+                OdbcCommand cmdCompleteupdate = new OdbcCommand(completeUpdate, odbcCon);
+               
                 try
                 {
                     cmdNoah.ExecuteNonQuery();
-                    cmdItem1.ExecuteNonQuery();
-                    cmdItem2.ExecuteNonQuery();
-                    cmdItem3.ExecuteNonQuery();
-                    cmdItem4.ExecuteNonQuery();
-                    cmdItem5.ExecuteNonQuery();
-                    cmdRate1.ExecuteNonQuery();
-                    cmdRate2.ExecuteNonQuery();
-                    cmdRate3.ExecuteNonQuery();
-                    cmdRate4.ExecuteNonQuery();
-                    cmdRate5.ExecuteNonQuery();
+                    cmdCompleteupdate.ExecuteNonQuery();
+                   
                     richTextBoxdropdebugger.Text = richTextBoxdropdebugger.Text + '\r' + '\r' + "Drop has been sucessfull imported";
                     richTextBoxdropdebugger.Text = richTextBoxdropdebugger.Text + '\r' + "Monstername:  " + lbMonstername.SelectedItem.ToString() + '\t' + " Monster ID:  " + lbMonsterid.SelectedItem.ToString();
                     richTextBoxdropdebugger.Text = richTextBoxdropdebugger.Text + '\r' + "Item ID 1:  " + txtItem1.Text + '\t' + '\t' + '\t' + " Item RATE 1:  " + txtRate1.Text;
