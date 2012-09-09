@@ -1,0 +1,20 @@
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\bin\Debug\MysteryGuest-INC.exe.config
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.csprojResolveAssemblyReference.cache
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest_INC.Properties.Resources.resources
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.csproj.GenerateResource.Cache
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest_INC.frmMain.resources
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\bin\Debug\MysteryGuest-INC.exe
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\bin\Debug\MysteryGuest-INC.pdb
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.exe
+c:\users\mysteryguest\documents\visual studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.pdb
+C:\Users\MysteryGuest\Documents\Visual Studio 11\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest_INC.frmLoading.resources
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\bin\Debug\MysteryGuest-INC.exe.config
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.exe
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.pdb
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.csprojResolveAssemblyReference.cache
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest_INC.frmLoading.resources
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest_INC.frmMain.resources
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest_INC.Properties.Resources.resources
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\obj\Debug\MysteryGuest-INC.csproj.GenerateResource.Cache
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\bin\Debug\MysteryGuest-INC.exe
+D:\Projects\MysteryGuest-INC\MysteryGuest-INC\bin\Debug\MysteryGuest-INC.pdb
