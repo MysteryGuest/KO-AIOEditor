@@ -54,7 +54,7 @@ namespace MysteryGuest_INC
         //TEST CONNECTION   
         //Declare new connection.
         MySqlConnection sqlConnection = new MySqlConnection(
-                "SERVER=108.167.174.76,3306;" +
+                "SERVER=,3306;" +
                 "DATABASE=mg18_INC;" +
                 "UID=mg18_INC;" +
                 "PASSWORD=;");
