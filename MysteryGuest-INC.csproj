@@ -49,6 +49,9 @@
   <ItemGroup>
     <Compile Include="Database\DatabaseConnection.cs" />
     <Compile Include="Database\DatabaseManager.cs" />
+    <Compile Include="Database\SQL\SQLDatabaseConnection.cs" />
+    <Compile Include="Database\MySQL\MySQLDatabaseConnection.cs" />
+    <Compile Include="Database\ODBC\OdbcDatabaseConnection.cs" />
     <Compile Include="frmLoading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,11 +164,7 @@
   <ItemGroup>
     <None Include="Resources\arrow.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\MSSQL\" />
-    <Folder Include="Database\MySQL\" />
-    <Folder Include="Database\ODBC\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
