@@ -1,7 +1,45 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MysteryGuest_INC.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GameDatabase_ConnectionMethod" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC</Value>
+    </Setting>
+    <Setting Name="GameDatabase_Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KN_online</Value>
+    </Setting>
+    <Setting Name="GameDatabase_User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">knight</Value>
+    </Setting>
+    <Setting Name="GameDatabase_Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">knight</Value>
+    </Setting>
+    <Setting Name="GameDatabase_DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GameDatabase_TestPassed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AccountDatabase_ConnectionMethod" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ODBC</Value>
+    </Setting>
+    <Setting Name="AccountDatabase_Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KN_online</Value>
+    </Setting>
+    <Setting Name="AccountDatabase_User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">knight</Value>
+    </Setting>
+    <Setting Name="AccountDatabase_Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">knight</Value>
+    </Setting>
+    <Setting Name="AccountDatabase_DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AccountDatabase_TestPassed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SaveDatabaseSettings" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

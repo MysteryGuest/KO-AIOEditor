@@ -16,20 +16,28 @@ namespace MysteryGuest_INC
         {
             string[][] settings = 
             {
-                         // setting name                default value
-                new [] { "Database\\ConnectionMethod", "ODBC" },        // MySQL/MSSQL/ODBC
-                new [] { "Database\\Server",           "KN_online" },   // Server name/host or datasource name
-                new [] { "Database\\Driver",           "SQL server" },  // Name of driver to use with MSSQL connections
-                new [] { "Database\\User",             "knight" },      // Username
-                new [] { "Database\\Password",         "knight" },      // Password
-                new [] { "Database\\DatabaseName",     ""       },      // Database name
+                // setting name                             default value
+                new [] { "GameDatabase\\ConnectionMethod",    "ODBC"      },     // MySQL/MSSQL/ODBC
+                new [] { "GameDatabase\\Server",              "KN_online" },     // Server name/host or datasource name
+                new [] { "GameDatabase\\User",                "knight"    },     // Username
+                new [] { "GameDatabase\\Password",            "knight"    },     // Password
+                new [] { "GameDatabase\\DatabaseName",        ""          },     // Database name
+                new [] { "GameDatabase\\TestPassed",          "0"         },     // Has it successfully connected using these details
+
+                new [] { "AccountDatabase\\ConnectionMethod", "ODBC"      },     // MySQL/MSSQL/ODBC
+                new [] { "AccountDatabase\\Server",           "KN_accounts" },   // Server name/host or datasource name
+                new [] { "AccountDatabase\\User",             "knight"     },    // Username
+                new [] { "AccountDatabase\\Password",         "knight"     },    // Password
+                new [] { "AccountDatabase\\DatabaseName",     ""           },    // Database name
+                new [] { "AccountDatabase\\TestPassed",       "0"          },    // Has it successfully connected using these details
+
             };
 
             foreach (var setting in settings)
             {
                 try
                 {
-                    GetString(setting[0], setting[1]);
+                    GetStringFromUserConfig(setting[0], setting[1]);
                 }
                 catch (Exception)
                 {
@@ -57,12 +65,18 @@ namespace MysteryGuest_INC
                 return defaultValue;
 
             result = true;
-            return defaultValue;
+            return value;
         }
 
         public virtual void SetInt(string key, int value)
         {
             // dummy
+        }
+
+        public virtual string GetStringFromUserConfig(string key, string defaultValue = "")
+        {
+            // dummy
+            return "";
         }
 
         public virtual string GetString(string key, string defaultValue = "")

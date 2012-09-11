@@ -8,6 +8,11 @@ namespace MysteryGuest_INC
         {
         }
 
+        private string NormaliseKey(string key)
+        {
+            return key.Replace('\\', '_');
+        }
+
         public override int GetInt(string key, int defaultValue = -1)
         {
             bool result;
@@ -15,16 +20,29 @@ namespace MysteryGuest_INC
             if (result)
                 return value;
 
-            var tmp = Properties.Settings.Default.PropertyValues[key];
-            value = (tmp == null ? defaultValue : (int)tmp.PropertyValue);
-            base.UpdateSetting(key, value);
+            var newKey = NormaliseKey(key);
+            var tmp = Properties.Settings.Default[newKey];
+            value = (tmp == null ? defaultValue : Int32.Parse((string)tmp));
+
+            base.UpdateSetting(key, value.ToString());
 
             return value;
         }
 
         public override void SetInt(string key, int value)
         {
-            UpdateSetting(key, value);
+            UpdateSetting(key, value.ToString());
+        }
+
+        public override string GetStringFromUserConfig(string key, string defaultValue = "")
+        {
+            var newKey = NormaliseKey(key);
+            var tmp = Properties.Settings.Default[newKey];
+            var value = (tmp == null ? defaultValue : (string)tmp);
+
+            base.UpdateSetting(key, value);
+
+            return value;
         }
 
         public override string GetString(string key, string defaultValue = "")
@@ -34,11 +52,7 @@ namespace MysteryGuest_INC
             if (result)
                 return value;
 
-            var tmp = Properties.Settings.Default.PropertyValues[key];
-            value = (tmp == null ? defaultValue : (string)tmp.PropertyValue);
-            base.UpdateSetting(key, value);
-
-            return value;
+            return GetStringFromUserConfig(key, defaultValue);
         }
 
         public override void SetString(string key, string value)
@@ -48,18 +62,10 @@ namespace MysteryGuest_INC
 
         protected override void UpdateSetting(string key, object value)
         {
-            var property = new SettingsProperty(key);
-            var propertyValue = new SettingsPropertyValue(property);
-            propertyValue.PropertyValue = value;
-
-            Properties.Settings.Default.PropertyValues.Add(propertyValue);
-            Save();
-
             base.UpdateSetting(key, value);
-        }
 
-        private void Save()
-        {
+            key = NormaliseKey(key);
+            Properties.Settings.Default[key] = (string)value;
             Properties.Settings.Default.Save();
         }
      }

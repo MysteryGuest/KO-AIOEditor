@@ -1,11 +1,15 @@
-﻿using System.Data.Odbc;
+﻿using MySql;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 namespace MysteryGuest_INC
 {
-    class OdbcDatabaseConnection : DatabaseConnection
+    class MySQLDatabaseConnection : DatabaseConnection
     {
-        public OdbcDatabaseConnection()
+        public MySQLDatabaseConnection(string serverName, string user, string pass, string databaseName) 
+            : base(serverName, user, pass, databaseName)
         {
-            _dbConnection = new OdbcConnection();
+            _dbConnection = new MySqlConnection();
         }
     }
 }

@@ -28,84 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Timer tmrRuntime;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.tabcontrolMain = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panelFirst = new System.Windows.Forms.Panel();
-            this.gbSettings = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.radiobuttonDefault = new System.Windows.Forms.RadioButton();
-            this.lblOn = new System.Windows.Forms.Label();
-            this.radiobuttonCustom = new System.Windows.Forms.RadioButton();
-            this.lblOff = new System.Windows.Forms.Label();
-            this.checkBoxOff1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxOff = new System.Windows.Forms.CheckBox();
-            this.checkBoxOn1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxOn = new System.Windows.Forms.CheckBox();
-            this.lblKeepconnected = new System.Windows.Forms.Label();
-            this.lblSaveconnection = new System.Windows.Forms.Label();
-            this.gbDebugger = new System.Windows.Forms.GroupBox();
-            this.lblError = new System.Windows.Forms.Label();
-            this.richtextboxDebugger = new System.Windows.Forms.RichTextBox();
-            this.btnCopydebugger = new System.Windows.Forms.Button();
-            this.gbConnect = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.checkboxManually = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
-            this.txtServername = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboboxDatabase = new System.Windows.Forms.ComboBox();
-            this.btnTestconnection = new System.Windows.Forms.Button();
-            this.lblTypeofconnection = new System.Windows.Forms.Label();
-            this.radioButtonSQL = new System.Windows.Forms.RadioButton();
-            this.radioButtonODBC = new System.Windows.Forms.RadioButton();
-            this.lblConnection = new System.Windows.Forms.Label();
-            this.lblInfo = new System.Windows.Forms.Label();
-            this.btnFirstnext = new System.Windows.Forms.Button();
-            this.btnFirstcancel = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panelLogin = new System.Windows.Forms.Panel();
+            this.lblInfologingregister = new System.Windows.Forms.Label();
+            this.lblRegisterlogin = new System.Windows.Forms.Label();
+            this.gbLogin = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtRegistersecuritycode = new System.Windows.Forms.TextBox();
+            this.btnRegisterinsert = new System.Windows.Forms.Button();
+            this.pictureboxRegistercheck1 = new System.Windows.Forms.PictureBox();
+            this.pictureboxRegistercheck2 = new System.Windows.Forms.PictureBox();
+            this.pictureboxRegistercheck3 = new System.Windows.Forms.PictureBox();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnRecover = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.gbRecover = new System.Windows.Forms.GroupBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelRight = new System.Windows.Forms.Panel();
             this.statusstripLogin = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabeldate = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panelRight = new System.Windows.Forms.Panel();
-            this.panelLeft = new System.Windows.Forms.Panel();
-            this.gbRecover = new System.Windows.Forms.GroupBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnRecover = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.gbRegister = new System.Windows.Forms.GroupBox();
-            this.pictureboxRegistercheck3 = new System.Windows.Forms.PictureBox();
-            this.pictureboxRegistercheck2 = new System.Windows.Forms.PictureBox();
-            this.pictureboxRegistercheck1 = new System.Windows.Forms.PictureBox();
-            this.btnRegisterinsert = new System.Windows.Forms.Button();
-            this.txtRegistersecuritycode = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtRegisteremail = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtRegisterpassword = new System.Windows.Forms.TextBox();
-            this.txtRegisterusername = new System.Windows.Forms.TextBox();
-            this.gbLogin = new System.Windows.Forms.GroupBox();
-            this.checkboxRememberme = new System.Windows.Forms.CheckBox();
-            this.btnLoginlogin = new System.Windows.Forms.Button();
-            this.lblLoginusername = new System.Windows.Forms.Label();
-            this.lblLoginpassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblRegisterlogin = new System.Windows.Forms.Label();
-            this.lblInfologingregister = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panelDropeditor = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -113,10 +61,13 @@
             this.gbDebuggerdrop = new System.Windows.Forms.GroupBox();
             this.richTextBoxdropdebugger = new System.Windows.Forms.RichTextBox();
             this.gbItemstats = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.gbGroupitems = new System.Windows.Forms.GroupBox();
             this.lbGroupitems = new System.Windows.Forms.ListBox();
             this.gbItems = new System.Windows.Forms.GroupBox();
             this.gbUpdate = new System.Windows.Forms.GroupBox();
+            this.lblSsid = new System.Windows.Forms.Label();
+            this.txtSsid = new System.Windows.Forms.TextBox();
             this.lblMonstername = new System.Windows.Forms.Label();
             this.lblNoah = new System.Windows.Forms.Label();
             this.txtNoah = new System.Windows.Forms.TextBox();
@@ -139,13 +90,15 @@
             this.txtItem2 = new System.Windows.Forms.TextBox();
             this.txtItem1 = new System.Windows.Forms.TextBox();
             this.gbMonsters = new System.Windows.Forms.GroupBox();
-            this.lbMonstername = new System.Windows.Forms.ListBox();
+            this.lvwMonsters = new System.Windows.Forms.ListView();
+            this.chMonsterID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chMonsterName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnMonstersearch = new System.Windows.Forms.Button();
             this.txtDropeditormonstersearch = new System.Windows.Forms.TextBox();
-            this.lbMonsterid = new System.Windows.Forms.ListBox();
             this.gbItem = new System.Windows.Forms.GroupBox();
-            this.lbItemname = new System.Windows.Forms.ListBox();
-            this.lbItemid = new System.Windows.Forms.ListBox();
+            this.lvwItems = new System.Windows.Forms.ListView();
+            this.chItemID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chItemName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnItemsearch = new System.Windows.Forms.Button();
             this.txtDropeditoritemsearch = new System.Windows.Forms.TextBox();
             this.toolStripknightonline = new System.Windows.Forms.ToolStrip();
@@ -154,26 +107,43 @@
             this.toolStripDropDownButtoneditors = new System.Windows.Forms.ToolStripDropDownButton();
             this.dropEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButtontools = new System.Windows.Forms.ToolStripDropDownButton();
-            this.lblSsid = new System.Windows.Forms.Label();
-            this.txtSsid = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            tmrRuntime = new System.Windows.Forms.Timer(this.components);
-            this.tabcontrolMain.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panelFirst.SuspendLayout();
-            this.gbSettings.SuspendLayout();
-            this.gbDebugger.SuspendLayout();
-            this.gbConnect.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panelLogin.SuspendLayout();
-            this.statusstripLogin.SuspendLayout();
-            this.gbRecover.SuspendLayout();
-            this.gbRegister.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck2)).BeginInit();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panelFirst = new System.Windows.Forms.Panel();
+            this.gbSettings = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.radiobuttonDefault = new System.Windows.Forms.RadioButton();
+            this.lblOn = new System.Windows.Forms.Label();
+            this.radiobuttonCustom = new System.Windows.Forms.RadioButton();
+            this.lblOff = new System.Windows.Forms.Label();
+            this.checkBoxOff1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxOn1 = new System.Windows.Forms.CheckBox();
+            this.lblSaveconnection = new System.Windows.Forms.Label();
+            this.gbDebugger = new System.Windows.Forms.GroupBox();
+            this.richtextboxDebugger = new System.Windows.Forms.RichTextBox();
+            this.btnCopydebugger = new System.Windows.Forms.Button();
+            this.gbConnect = new System.Windows.Forms.GroupBox();
+            this.radioButtonMySQL = new System.Windows.Forms.RadioButton();
+            this.checkboxManually = new System.Windows.Forms.CheckBox();
+            this.lblDBUsername = new System.Windows.Forms.Label();
+            this.lblDBPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lbServerName = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtServername = new System.Windows.Forms.TextBox();
+            this.lblDatabase = new System.Windows.Forms.Label();
+            this.comboboxDatabase = new System.Windows.Forms.ComboBox();
+            this.btnTestconnection = new System.Windows.Forms.Button();
+            this.lblTypeofconnection = new System.Windows.Forms.Label();
+            this.radioButtonSQL = new System.Windows.Forms.RadioButton();
+            this.radioButtonODBC = new System.Windows.Forms.RadioButton();
+            this.lblConnection = new System.Windows.Forms.Label();
+            this.lblInfo = new System.Windows.Forms.Label();
+            this.btnFirstnext = new System.Windows.Forms.Button();
+            this.btnFirstcancel = new System.Windows.Forms.Button();
+            this.tabcontrolMain = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck1)).BeginInit();
-            this.gbLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck3)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panelDropeditor.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -185,517 +155,197 @@
             this.gbMonsters.SuspendLayout();
             this.gbItem.SuspendLayout();
             this.toolStripknightonline.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panelFirst.SuspendLayout();
+            this.gbSettings.SuspendLayout();
+            this.gbDebugger.SuspendLayout();
+            this.gbConnect.SuspendLayout();
+            this.tabcontrolMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tmrRuntime
-            // 
-            tmrRuntime.Enabled = true;
-            tmrRuntime.Interval = 1000;
-            tmrRuntime.Tick += new System.EventHandler(this.tmrRuntime_Tick);
-            // 
-            // tabcontrolMain
-            // 
-            this.tabcontrolMain.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.tabcontrolMain.Controls.Add(this.tabPage1);
-            this.tabcontrolMain.Controls.Add(this.tabPage2);
-            this.tabcontrolMain.Controls.Add(this.tabPage3);
-            this.tabcontrolMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabcontrolMain.HotTrack = true;
-            this.tabcontrolMain.Location = new System.Drawing.Point(0, 0);
-            this.tabcontrolMain.Multiline = true;
-            this.tabcontrolMain.Name = "tabcontrolMain";
-            this.tabcontrolMain.SelectedIndex = 0;
-            this.tabcontrolMain.Size = new System.Drawing.Size(639, 476);
-            this.tabcontrolMain.TabIndex = 14;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.Maroon;
-            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.panelFirst);
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(631, 445);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Settings";
-            // 
-            // panelFirst
-            // 
-            this.panelFirst.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelFirst.Controls.Add(this.gbSettings);
-            this.panelFirst.Controls.Add(this.gbDebugger);
-            this.panelFirst.Controls.Add(this.gbConnect);
-            this.panelFirst.Controls.Add(this.lblConnection);
-            this.panelFirst.Controls.Add(this.lblInfo);
-            this.panelFirst.Controls.Add(this.btnFirstnext);
-            this.panelFirst.Controls.Add(this.btnFirstcancel);
-            this.panelFirst.Location = new System.Drawing.Point(6, 6);
-            this.panelFirst.Name = "panelFirst";
-            this.panelFirst.Size = new System.Drawing.Size(618, 430);
-            this.panelFirst.TabIndex = 14;
-            // 
-            // gbSettings
-            // 
-            this.gbSettings.Controls.Add(this.label6);
-            this.gbSettings.Controls.Add(this.radiobuttonDefault);
-            this.gbSettings.Controls.Add(this.lblOn);
-            this.gbSettings.Controls.Add(this.radiobuttonCustom);
-            this.gbSettings.Controls.Add(this.lblOff);
-            this.gbSettings.Controls.Add(this.checkBoxOff1);
-            this.gbSettings.Controls.Add(this.checkBoxOff);
-            this.gbSettings.Controls.Add(this.checkBoxOn1);
-            this.gbSettings.Controls.Add(this.checkBoxOn);
-            this.gbSettings.Controls.Add(this.lblKeepconnected);
-            this.gbSettings.Controls.Add(this.lblSaveconnection);
-            this.gbSettings.Location = new System.Drawing.Point(5, 51);
-            this.gbSettings.Name = "gbSettings";
-            this.gbSettings.Size = new System.Drawing.Size(610, 100);
-            this.gbSettings.TabIndex = 21;
-            this.gbSettings.TabStop = false;
-            this.gbSettings.Text = "Settings";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(237, 23);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 15);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "label6";
-            // 
-            // radiobuttonDefault
-            // 
-            this.radiobuttonDefault.AutoSize = true;
-            this.radiobuttonDefault.Checked = true;
-            this.radiobuttonDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radiobuttonDefault.ForeColor = System.Drawing.Color.Black;
-            this.radiobuttonDefault.Location = new System.Drawing.Point(471, 10);
-            this.radiobuttonDefault.Name = "radiobuttonDefault";
-            this.radiobuttonDefault.Size = new System.Drawing.Size(64, 19);
-            this.radiobuttonDefault.TabIndex = 21;
-            this.radiobuttonDefault.TabStop = true;
-            this.radiobuttonDefault.Text = "Default";
-            this.radiobuttonDefault.UseVisualStyleBackColor = true;
-            this.radiobuttonDefault.CheckedChanged += new System.EventHandler(this.radiobuttonDefault_CheckedChanged);
-            // 
-            // lblOn
-            // 
-            this.lblOn.AutoSize = true;
-            this.lblOn.Location = new System.Drawing.Point(120, 10);
-            this.lblOn.Name = "lblOn";
-            this.lblOn.Size = new System.Drawing.Size(24, 15);
-            this.lblOn.TabIndex = 4;
-            this.lblOn.Text = "ON";
-            // 
-            // radiobuttonCustom
-            // 
-            this.radiobuttonCustom.AutoSize = true;
-            this.radiobuttonCustom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radiobuttonCustom.ForeColor = System.Drawing.Color.Black;
-            this.radiobuttonCustom.Location = new System.Drawing.Point(541, 10);
-            this.radiobuttonCustom.Name = "radiobuttonCustom";
-            this.radiobuttonCustom.Size = new System.Drawing.Size(65, 19);
-            this.radiobuttonCustom.TabIndex = 20;
-            this.radiobuttonCustom.Text = "Custom";
-            this.radiobuttonCustom.UseVisualStyleBackColor = true;
-            this.radiobuttonCustom.CheckedChanged += new System.EventHandler(this.radiobuttonCustom_CheckedChanged);
-            // 
-            // lblOff
-            // 
-            this.lblOff.AutoSize = true;
-            this.lblOff.Location = new System.Drawing.Point(150, 10);
-            this.lblOff.Name = "lblOff";
-            this.lblOff.Size = new System.Drawing.Size(28, 15);
-            this.lblOff.TabIndex = 5;
-            this.lblOff.Text = "OFF";
-            // 
-            // checkBoxOff1
-            // 
-            this.checkBoxOff1.AutoSize = true;
-            this.checkBoxOff1.Enabled = false;
-            this.checkBoxOff1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxOff1.Location = new System.Drawing.Point(158, 45);
-            this.checkBoxOff1.Name = "checkBoxOff1";
-            this.checkBoxOff1.Size = new System.Drawing.Size(12, 11);
-            this.checkBoxOff1.TabIndex = 4;
-            this.checkBoxOff1.UseVisualStyleBackColor = true;
-            this.checkBoxOff1.CheckedChanged += new System.EventHandler(this.checkBoxOff1_CheckedChanged);
-            // 
-            // checkBoxOff
-            // 
-            this.checkBoxOff.AutoSize = true;
-            this.checkBoxOff.Enabled = false;
-            this.checkBoxOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxOff.Location = new System.Drawing.Point(158, 28);
-            this.checkBoxOff.Name = "checkBoxOff";
-            this.checkBoxOff.Size = new System.Drawing.Size(12, 11);
-            this.checkBoxOff.TabIndex = 3;
-            this.checkBoxOff.UseVisualStyleBackColor = true;
-            this.checkBoxOff.CheckedChanged += new System.EventHandler(this.checkBoxOff_CheckedChanged);
-            // 
-            // checkBoxOn1
-            // 
-            this.checkBoxOn1.AutoSize = true;
-            this.checkBoxOn1.Checked = true;
-            this.checkBoxOn1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxOn1.Enabled = false;
-            this.checkBoxOn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxOn1.Location = new System.Drawing.Point(126, 45);
-            this.checkBoxOn1.Name = "checkBoxOn1";
-            this.checkBoxOn1.Size = new System.Drawing.Size(12, 11);
-            this.checkBoxOn1.TabIndex = 2;
-            this.checkBoxOn1.UseVisualStyleBackColor = true;
-            this.checkBoxOn1.CheckedChanged += new System.EventHandler(this.checkBoxOn1_CheckedChanged);
-            // 
-            // checkBoxOn
-            // 
-            this.checkBoxOn.AutoSize = true;
-            this.checkBoxOn.Checked = true;
-            this.checkBoxOn.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxOn.Enabled = false;
-            this.checkBoxOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxOn.Location = new System.Drawing.Point(126, 28);
-            this.checkBoxOn.Name = "checkBoxOn";
-            this.checkBoxOn.Size = new System.Drawing.Size(12, 11);
-            this.checkBoxOn.TabIndex = 1;
-            this.checkBoxOn.UseVisualStyleBackColor = true;
-            this.checkBoxOn.CheckedChanged += new System.EventHandler(this.checkBoxOn_CheckedChanged);
-            // 
-            // lblKeepconnected
-            // 
-            this.lblKeepconnected.AutoSize = true;
-            this.lblKeepconnected.Location = new System.Drawing.Point(3, 26);
-            this.lblKeepconnected.Name = "lblKeepconnected";
-            this.lblKeepconnected.Size = new System.Drawing.Size(92, 15);
-            this.lblKeepconnected.TabIndex = 6;
-            this.lblKeepconnected.Text = "Keep connected";
-            // 
-            // lblSaveconnection
-            // 
-            this.lblSaveconnection.AutoSize = true;
-            this.lblSaveconnection.Location = new System.Drawing.Point(3, 43);
-            this.lblSaveconnection.Name = "lblSaveconnection";
-            this.lblSaveconnection.Size = new System.Drawing.Size(95, 15);
-            this.lblSaveconnection.TabIndex = 7;
-            this.lblSaveconnection.Text = "Save connection";
-            // 
-            // gbDebugger
-            // 
-            this.gbDebugger.Controls.Add(this.lblError);
-            this.gbDebugger.Controls.Add(this.richtextboxDebugger);
-            this.gbDebugger.Controls.Add(this.btnCopydebugger);
-            this.gbDebugger.Location = new System.Drawing.Point(5, 278);
-            this.gbDebugger.Name = "gbDebugger";
-            this.gbDebugger.Size = new System.Drawing.Size(610, 116);
-            this.gbDebugger.TabIndex = 18;
-            this.gbDebugger.TabStop = false;
-            this.gbDebugger.Text = "Debugger";
-            // 
-            // lblError
-            // 
-            this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(517, 19);
-            this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(44, 15);
-            this.lblError.TabIndex = 19;
-            this.lblError.Text = "Errors:";
-            // 
-            // richtextboxDebugger
-            // 
-            this.richtextboxDebugger.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.richtextboxDebugger.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richtextboxDebugger.ForeColor = System.Drawing.Color.Maroon;
-            this.richtextboxDebugger.Location = new System.Drawing.Point(6, 20);
-            this.richtextboxDebugger.Name = "richtextboxDebugger";
-            this.richtextboxDebugger.ReadOnly = true;
-            this.richtextboxDebugger.Size = new System.Drawing.Size(505, 90);
-            this.richtextboxDebugger.TabIndex = 18;
-            this.richtextboxDebugger.Text = "";
-            this.richtextboxDebugger.WordWrap = false;
-            // 
-            // btnCopydebugger
-            // 
-            this.btnCopydebugger.BackColor = System.Drawing.Color.Maroon;
-            this.btnCopydebugger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCopydebugger.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCopydebugger.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCopydebugger.Location = new System.Drawing.Point(517, 83);
-            this.btnCopydebugger.Name = "btnCopydebugger";
-            this.btnCopydebugger.Size = new System.Drawing.Size(87, 27);
-            this.btnCopydebugger.TabIndex = 17;
-            this.btnCopydebugger.Text = "Copy";
-            this.btnCopydebugger.UseVisualStyleBackColor = false;
-            // 
-            // gbConnect
-            // 
-            this.gbConnect.Controls.Add(this.radioButton1);
-            this.gbConnect.Controls.Add(this.checkboxManually);
-            this.gbConnect.Controls.Add(this.label5);
-            this.gbConnect.Controls.Add(this.label4);
-            this.gbConnect.Controls.Add(this.txtPassword);
-            this.gbConnect.Controls.Add(this.label3);
-            this.gbConnect.Controls.Add(this.txtUsername);
-            this.gbConnect.Controls.Add(this.txtServername);
-            this.gbConnect.Controls.Add(this.label2);
-            this.gbConnect.Controls.Add(this.comboboxDatabase);
-            this.gbConnect.Controls.Add(this.btnTestconnection);
-            this.gbConnect.Controls.Add(this.lblTypeofconnection);
-            this.gbConnect.Controls.Add(this.radioButtonSQL);
-            this.gbConnect.Controls.Add(this.radioButtonODBC);
-            this.gbConnect.Location = new System.Drawing.Point(5, 157);
-            this.gbConnect.Name = "gbConnect";
-            this.gbConnect.Size = new System.Drawing.Size(610, 116);
-            this.gbConnect.TabIndex = 16;
-            this.gbConnect.TabStop = false;
-            this.gbConnect.Text = "Connect";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton1.Location = new System.Drawing.Point(9, 75);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 19);
-            this.radioButton1.TabIndex = 26;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "MySQL";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // checkboxManually
-            // 
-            this.checkboxManually.AutoSize = true;
-            this.checkboxManually.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkboxManually.Location = new System.Drawing.Point(517, 23);
-            this.checkboxManually.Name = "checkboxManually";
-            this.checkboxManually.Size = new System.Drawing.Size(76, 19);
-            this.checkboxManually.TabIndex = 8;
-            this.checkboxManually.Text = "Manually";
-            this.checkboxManually.UseVisualStyleBackColor = true;
-            this.checkboxManually.CheckedChanged += new System.EventHandler(this.checkboxManually_CheckedChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(358, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 15);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Username";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(358, 67);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 15);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Password";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.Maroon;
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPassword.Location = new System.Drawing.Point(361, 85);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(150, 23);
-            this.txtPassword.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(202, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 15);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Servername";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.Maroon;
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsername.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtUsername.Location = new System.Drawing.Point(361, 41);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(150, 23);
-            this.txtUsername.TabIndex = 11;
-            // 
-            // txtServername
-            // 
-            this.txtServername.BackColor = System.Drawing.Color.Maroon;
-            this.txtServername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtServername.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtServername.Location = new System.Drawing.Point(205, 41);
-            this.txtServername.Name = "txtServername";
-            this.txtServername.Size = new System.Drawing.Size(150, 23);
-            this.txtServername.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(202, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 15);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Database";
-            // 
-            // comboboxDatabase
-            // 
-            this.comboboxDatabase.BackColor = System.Drawing.Color.Maroon;
-            this.comboboxDatabase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboboxDatabase.Enabled = false;
-            this.comboboxDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboboxDatabase.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.comboboxDatabase.FormattingEnabled = true;
-            this.comboboxDatabase.Location = new System.Drawing.Point(205, 85);
-            this.comboboxDatabase.Name = "comboboxDatabase";
-            this.comboboxDatabase.Size = new System.Drawing.Size(150, 23);
-            this.comboboxDatabase.TabIndex = 10;
-            // 
-            // btnTestconnection
-            // 
-            this.btnTestconnection.BackColor = System.Drawing.Color.Maroon;
-            this.btnTestconnection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestconnection.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTestconnection.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnTestconnection.Location = new System.Drawing.Point(517, 83);
-            this.btnTestconnection.Name = "btnTestconnection";
-            this.btnTestconnection.Size = new System.Drawing.Size(87, 27);
-            this.btnTestconnection.TabIndex = 13;
-            this.btnTestconnection.Text = "Get DB";
-            this.btnTestconnection.UseVisualStyleBackColor = false;
-            this.btnTestconnection.Click += new System.EventHandler(this.btnTestconnection_Click);
-            // 
-            // lblTypeofconnection
-            // 
-            this.lblTypeofconnection.AutoSize = true;
-            this.lblTypeofconnection.Location = new System.Drawing.Point(6, 23);
-            this.lblTypeofconnection.Name = "lblTypeofconnection";
-            this.lblTypeofconnection.Size = new System.Drawing.Size(108, 15);
-            this.lblTypeofconnection.TabIndex = 13;
-            this.lblTypeofconnection.Text = "Type of connection";
-            // 
-            // radioButtonSQL
-            // 
-            this.radioButtonSQL.AutoSize = true;
-            this.radioButtonSQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonSQL.Location = new System.Drawing.Point(9, 58);
-            this.radioButtonSQL.Name = "radioButtonSQL";
-            this.radioButtonSQL.Size = new System.Drawing.Size(44, 19);
-            this.radioButtonSQL.TabIndex = 6;
-            this.radioButtonSQL.TabStop = true;
-            this.radioButtonSQL.Text = "SQL";
-            this.radioButtonSQL.UseVisualStyleBackColor = true;
-            this.radioButtonSQL.CheckedChanged += new System.EventHandler(this.radioButtonSQL_CheckedChanged);
-            // 
-            // radioButtonODBC
-            // 
-            this.radioButtonODBC.AutoSize = true;
-            this.radioButtonODBC.Checked = true;
-            this.radioButtonODBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonODBC.Location = new System.Drawing.Point(9, 41);
-            this.radioButtonODBC.Name = "radioButtonODBC";
-            this.radioButtonODBC.Size = new System.Drawing.Size(55, 19);
-            this.radioButtonODBC.TabIndex = 5;
-            this.radioButtonODBC.TabStop = true;
-            this.radioButtonODBC.Text = "ODBC\r\n";
-            this.radioButtonODBC.UseVisualStyleBackColor = true;
-            this.radioButtonODBC.CheckedChanged += new System.EventHandler(this.radioButtonODBC_CheckedChanged);
-            // 
-            // lblConnection
-            // 
-            this.lblConnection.AutoSize = true;
-            this.lblConnection.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConnection.ForeColor = System.Drawing.Color.Maroon;
-            this.lblConnection.Location = new System.Drawing.Point(1, 1);
-            this.lblConnection.Name = "lblConnection";
-            this.lblConnection.Size = new System.Drawing.Size(100, 19);
-            this.lblConnection.TabIndex = 15;
-            this.lblConnection.Text = "CONNECTION";
-            // 
-            // lblInfo
-            // 
-            this.lblInfo.Location = new System.Drawing.Point(3, 20);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(612, 35);
-            this.lblInfo.TabIndex = 14;
-            this.lblInfo.Text = "Set your settings, this will be mainly used. You will be able to change these set" +
-    "tings anytime. If you dont know what these things do please check \"Default\", or " +
-    "just check \"Custom\".";
-            // 
-            // btnFirstnext
-            // 
-            this.btnFirstnext.BackColor = System.Drawing.Color.Maroon;
-            this.btnFirstnext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFirstnext.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFirstnext.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFirstnext.Location = new System.Drawing.Point(522, 400);
-            this.btnFirstnext.Name = "btnFirstnext";
-            this.btnFirstnext.Size = new System.Drawing.Size(87, 27);
-            this.btnFirstnext.TabIndex = 0;
-            this.btnFirstnext.Text = "Next";
-            this.btnFirstnext.UseVisualStyleBackColor = false;
-            this.btnFirstnext.Click += new System.EventHandler(this.btnFirstnext_Click);
-            // 
-            // btnFirstcancel
-            // 
-            this.btnFirstcancel.BackColor = System.Drawing.Color.Maroon;
-            this.btnFirstcancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFirstcancel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFirstcancel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnFirstcancel.Location = new System.Drawing.Point(429, 400);
-            this.btnFirstcancel.Name = "btnFirstcancel";
-            this.btnFirstcancel.Size = new System.Drawing.Size(87, 27);
-            this.btnFirstcancel.TabIndex = 3;
-            this.btnFirstcancel.Text = "Cancel";
-            this.btnFirstcancel.UseVisualStyleBackColor = false;
-            this.btnFirstcancel.Click += new System.EventHandler(this.btnFirstcancel_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Maroon;
-            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage2.Controls.Add(this.panelLogin);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(631, 445);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Login/Register";
-            // 
-            // panelLogin
-            // 
-            this.panelLogin.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelLogin.Controls.Add(this.statusstripLogin);
-            this.panelLogin.Controls.Add(this.panelRight);
-            this.panelLogin.Controls.Add(this.panelLeft);
-            this.panelLogin.Controls.Add(this.gbRecover);
-            this.panelLogin.Controls.Add(this.btnLogin);
-            this.panelLogin.Controls.Add(this.btnRecover);
-            this.panelLogin.Controls.Add(this.btnRegister);
-            this.panelLogin.Controls.Add(this.gbRegister);
-            this.panelLogin.Controls.Add(this.gbLogin);
-            this.panelLogin.Controls.Add(this.lblRegisterlogin);
-            this.panelLogin.Controls.Add(this.lblInfologingregister);
-            this.panelLogin.Location = new System.Drawing.Point(6, 6);
-            this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(618, 430);
-            this.panelLogin.TabIndex = 15;
+            // lblInfologingregister
+            // 
+            this.lblInfologingregister.Location = new System.Drawing.Point(3, 20);
+            this.lblInfologingregister.Name = "lblInfologingregister";
+            this.lblInfologingregister.Size = new System.Drawing.Size(612, 35);
+            this.lblInfologingregister.TabIndex = 14;
+            // 
+            // lblRegisterlogin
+            // 
+            this.lblRegisterlogin.AutoSize = true;
+            this.lblRegisterlogin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegisterlogin.ForeColor = System.Drawing.Color.Maroon;
+            this.lblRegisterlogin.Location = new System.Drawing.Point(1, 1);
+            this.lblRegisterlogin.Name = "lblRegisterlogin";
+            this.lblRegisterlogin.Size = new System.Drawing.Size(116, 19);
+            this.lblRegisterlogin.TabIndex = 15;
+            // 
+            // gbLogin
+            // 
+            this.gbLogin.Location = new System.Drawing.Point(209, 71);
+            this.gbLogin.Name = "gbLogin";
+            this.gbLogin.Size = new System.Drawing.Size(200, 300);
+            this.gbLogin.TabIndex = 17;
+            this.gbLogin.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.Maroon;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox2.Location = new System.Drawing.Point(24, 37);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(150, 20);
+            this.textBox2.TabIndex = 26;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.Maroon;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox1.Location = new System.Drawing.Point(24, 81);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 20);
+            this.textBox1.TabIndex = 27;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 23);
+            this.label11.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 23);
+            this.label10.TabIndex = 0;
+            // 
+            // txtRegistersecuritycode
+            // 
+            this.txtRegistersecuritycode.Location = new System.Drawing.Point(0, 0);
+            this.txtRegistersecuritycode.Name = "txtRegistersecuritycode";
+            this.txtRegistersecuritycode.Size = new System.Drawing.Size(100, 20);
+            this.txtRegistersecuritycode.TabIndex = 0;
+            // 
+            // btnRegisterinsert
+            // 
+            this.btnRegisterinsert.Location = new System.Drawing.Point(0, 0);
+            this.btnRegisterinsert.Name = "btnRegisterinsert";
+            this.btnRegisterinsert.Size = new System.Drawing.Size(75, 23);
+            this.btnRegisterinsert.TabIndex = 0;
+            // 
+            // pictureboxRegistercheck1
+            // 
+            this.pictureboxRegistercheck1.Location = new System.Drawing.Point(0, 0);
+            this.pictureboxRegistercheck1.Name = "pictureboxRegistercheck1";
+            this.pictureboxRegistercheck1.Size = new System.Drawing.Size(100, 50);
+            this.pictureboxRegistercheck1.TabIndex = 0;
+            this.pictureboxRegistercheck1.TabStop = false;
+            // 
+            // pictureboxRegistercheck2
+            // 
+            this.pictureboxRegistercheck2.Location = new System.Drawing.Point(0, 0);
+            this.pictureboxRegistercheck2.Name = "pictureboxRegistercheck2";
+            this.pictureboxRegistercheck2.Size = new System.Drawing.Size(100, 50);
+            this.pictureboxRegistercheck2.TabIndex = 0;
+            this.pictureboxRegistercheck2.TabStop = false;
+            // 
+            // pictureboxRegistercheck3
+            // 
+            this.pictureboxRegistercheck3.Location = new System.Drawing.Point(0, 0);
+            this.pictureboxRegistercheck3.Name = "pictureboxRegistercheck3";
+            this.pictureboxRegistercheck3.Size = new System.Drawing.Size(100, 50);
+            this.pictureboxRegistercheck3.TabIndex = 0;
+            this.pictureboxRegistercheck3.TabStop = false;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Location = new System.Drawing.Point(0, 0);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.TabIndex = 0;
+            // 
+            // btnRecover
+            // 
+            this.btnRecover.Location = new System.Drawing.Point(0, 0);
+            this.btnRecover.Name = "btnRecover";
+            this.btnRecover.Size = new System.Drawing.Size(75, 23);
+            this.btnRecover.TabIndex = 0;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(0, 0);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.TabIndex = 0;
+            // 
+            // gbRecover
+            // 
+            this.gbRecover.Location = new System.Drawing.Point(0, 0);
+            this.gbRecover.Name = "gbRecover";
+            this.gbRecover.Size = new System.Drawing.Size(200, 100);
+            this.gbRecover.TabIndex = 0;
+            this.gbRecover.TabStop = false;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.Maroon;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox10.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox10.Location = new System.Drawing.Point(24, 37);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(150, 20);
+            this.textBox10.TabIndex = 38;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(21, 19);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(43, 15);
+            this.label17.TabIndex = 39;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(21, 70);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 15);
+            this.label14.TabIndex = 40;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.Maroon;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox9.Location = new System.Drawing.Point(107, 66);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(67, 20);
+            this.textBox9.TabIndex = 41;
+            // 
+            // panelLeft
+            // 
+            this.panelLeft.Location = new System.Drawing.Point(0, 71);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(205, 300);
+            this.panelLeft.TabIndex = 23;
+            // 
+            // panelRight
+            // 
+            this.panelRight.Location = new System.Drawing.Point(413, 71);
+            this.panelRight.Name = "panelRight";
+            this.panelRight.Size = new System.Drawing.Size(205, 300);
+            this.panelRight.TabIndex = 24;
             // 
             // statusstripLogin
             // 
-            this.statusstripLogin.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.statusstripLogin.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabeldate,
-            this.toolStripStatusLabelStatus});
-            this.statusstripLogin.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.statusstripLogin.Location = new System.Drawing.Point(0, 408);
             this.statusstripLogin.Name = "statusstripLogin";
             this.statusstripLogin.Size = new System.Drawing.Size(618, 22);
             this.statusstripLogin.SizingGrip = false;
             this.statusstripLogin.TabIndex = 25;
-            this.statusstripLogin.Text = "statusStrip";
             // 
             // toolStripStatusLabeldate
             // 
@@ -712,356 +362,6 @@
             this.toolStripStatusLabelStatus.Name = "toolStripStatusLabelStatus";
             this.toolStripStatusLabelStatus.Size = new System.Drawing.Size(37, 17);
             this.toolStripStatusLabelStatus.Text = "Status";
-            // 
-            // panelRight
-            // 
-            this.panelRight.Location = new System.Drawing.Point(413, 71);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(205, 300);
-            this.panelRight.TabIndex = 24;
-            // 
-            // panelLeft
-            // 
-            this.panelLeft.Location = new System.Drawing.Point(0, 71);
-            this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(205, 300);
-            this.panelLeft.TabIndex = 23;
-            // 
-            // gbRecover
-            // 
-            this.gbRecover.Controls.Add(this.textBox9);
-            this.gbRecover.Controls.Add(this.label14);
-            this.gbRecover.Controls.Add(this.label17);
-            this.gbRecover.Controls.Add(this.textBox10);
-            this.gbRecover.Location = new System.Drawing.Point(3, 71);
-            this.gbRecover.Name = "gbRecover";
-            this.gbRecover.Size = new System.Drawing.Size(200, 300);
-            this.gbRecover.TabIndex = 22;
-            this.gbRecover.TabStop = false;
-            this.gbRecover.Text = "Recover";
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.Maroon;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox9.Location = new System.Drawing.Point(107, 66);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(67, 23);
-            this.textBox9.TabIndex = 41;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(21, 70);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(80, 15);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "Security code";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 19);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 15);
-            this.label17.TabIndex = 39;
-            this.label17.Text = "E-Mail";
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.Maroon;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox10.Location = new System.Drawing.Point(24, 37);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(150, 23);
-            this.textBox10.TabIndex = 38;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.Maroon;
-            this.btnLogin.Enabled = false;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogin.Location = new System.Drawing.Point(266, 377);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(87, 27);
-            this.btnLogin.TabIndex = 21;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // btnRecover
-            // 
-            this.btnRecover.BackColor = System.Drawing.Color.Maroon;
-            this.btnRecover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecover.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecover.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRecover.Location = new System.Drawing.Point(163, 377);
-            this.btnRecover.Name = "btnRecover";
-            this.btnRecover.Size = new System.Drawing.Size(87, 27);
-            this.btnRecover.TabIndex = 20;
-            this.btnRecover.Text = "Recover";
-            this.btnRecover.UseVisualStyleBackColor = false;
-            this.btnRecover.Click += new System.EventHandler(this.btnRecover_Click);
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.Color.Maroon;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegister.Location = new System.Drawing.Point(368, 377);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(87, 27);
-            this.btnRegister.TabIndex = 19;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            // 
-            // gbRegister
-            // 
-            this.gbRegister.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.gbRegister.Controls.Add(this.pictureboxRegistercheck3);
-            this.gbRegister.Controls.Add(this.pictureboxRegistercheck2);
-            this.gbRegister.Controls.Add(this.pictureboxRegistercheck1);
-            this.gbRegister.Controls.Add(this.btnRegisterinsert);
-            this.gbRegister.Controls.Add(this.txtRegistersecuritycode);
-            this.gbRegister.Controls.Add(this.label10);
-            this.gbRegister.Controls.Add(this.label11);
-            this.gbRegister.Controls.Add(this.txtRegisteremail);
-            this.gbRegister.Controls.Add(this.label12);
-            this.gbRegister.Controls.Add(this.label13);
-            this.gbRegister.Controls.Add(this.txtRegisterpassword);
-            this.gbRegister.Controls.Add(this.txtRegisterusername);
-            this.gbRegister.Location = new System.Drawing.Point(415, 71);
-            this.gbRegister.Name = "gbRegister";
-            this.gbRegister.Size = new System.Drawing.Size(200, 300);
-            this.gbRegister.TabIndex = 17;
-            this.gbRegister.TabStop = false;
-            this.gbRegister.Text = "Register";
-            // 
-            // pictureboxRegistercheck3
-            // 
-            this.pictureboxRegistercheck3.BackgroundImage = global::MysteryGuest_INC.Properties.Resources.ok;
-            this.pictureboxRegistercheck3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureboxRegistercheck3.Location = new System.Drawing.Point(159, 137);
-            this.pictureboxRegistercheck3.Name = "pictureboxRegistercheck3";
-            this.pictureboxRegistercheck3.Size = new System.Drawing.Size(15, 15);
-            this.pictureboxRegistercheck3.TabIndex = 45;
-            this.pictureboxRegistercheck3.TabStop = false;
-            this.pictureboxRegistercheck3.Visible = false;
-            // 
-            // pictureboxRegistercheck2
-            // 
-            this.pictureboxRegistercheck2.BackgroundImage = global::MysteryGuest_INC.Properties.Resources.ok;
-            this.pictureboxRegistercheck2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureboxRegistercheck2.Location = new System.Drawing.Point(159, 63);
-            this.pictureboxRegistercheck2.Name = "pictureboxRegistercheck2";
-            this.pictureboxRegistercheck2.Size = new System.Drawing.Size(15, 15);
-            this.pictureboxRegistercheck2.TabIndex = 44;
-            this.pictureboxRegistercheck2.TabStop = false;
-            this.pictureboxRegistercheck2.Visible = false;
-            // 
-            // pictureboxRegistercheck1
-            // 
-            this.pictureboxRegistercheck1.BackgroundImage = global::MysteryGuest_INC.Properties.Resources.ok;
-            this.pictureboxRegistercheck1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureboxRegistercheck1.Location = new System.Drawing.Point(159, 19);
-            this.pictureboxRegistercheck1.Name = "pictureboxRegistercheck1";
-            this.pictureboxRegistercheck1.Size = new System.Drawing.Size(15, 15);
-            this.pictureboxRegistercheck1.TabIndex = 43;
-            this.pictureboxRegistercheck1.TabStop = false;
-            this.pictureboxRegistercheck1.Visible = false;
-            // 
-            // btnRegisterinsert
-            // 
-            this.btnRegisterinsert.BackColor = System.Drawing.Color.Maroon;
-            this.btnRegisterinsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterinsert.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegisterinsert.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnRegisterinsert.Location = new System.Drawing.Point(107, 213);
-            this.btnRegisterinsert.Name = "btnRegisterinsert";
-            this.btnRegisterinsert.Size = new System.Drawing.Size(67, 27);
-            this.btnRegisterinsert.TabIndex = 42;
-            this.btnRegisterinsert.Text = "Register";
-            this.btnRegisterinsert.UseVisualStyleBackColor = false;
-            this.btnRegisterinsert.Click += new System.EventHandler(this.btnRegisterinsert_Click);
-            // 
-            // txtRegistersecuritycode
-            // 
-            this.txtRegistersecuritycode.BackColor = System.Drawing.Color.Maroon;
-            this.txtRegistersecuritycode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegistersecuritycode.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtRegistersecuritycode.Location = new System.Drawing.Point(107, 184);
-            this.txtRegistersecuritycode.Name = "txtRegistersecuritycode";
-            this.txtRegistersecuritycode.Size = new System.Drawing.Size(67, 23);
-            this.txtRegistersecuritycode.TabIndex = 41;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(21, 188);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 15);
-            this.label10.TabIndex = 40;
-            this.label10.Text = "Security code";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(21, 137);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 15);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "E-Mail";
-            // 
-            // txtRegisteremail
-            // 
-            this.txtRegisteremail.BackColor = System.Drawing.Color.Maroon;
-            this.txtRegisteremail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegisteremail.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtRegisteremail.Location = new System.Drawing.Point(24, 155);
-            this.txtRegisteremail.Name = "txtRegisteremail";
-            this.txtRegisteremail.Size = new System.Drawing.Size(150, 23);
-            this.txtRegisteremail.TabIndex = 38;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(21, 19);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 15);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Username";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(21, 63);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 15);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "Password";
-            // 
-            // txtRegisterpassword
-            // 
-            this.txtRegisterpassword.BackColor = System.Drawing.Color.Maroon;
-            this.txtRegisterpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegisterpassword.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtRegisterpassword.Location = new System.Drawing.Point(24, 81);
-            this.txtRegisterpassword.Name = "txtRegisterpassword";
-            this.txtRegisterpassword.Size = new System.Drawing.Size(150, 23);
-            this.txtRegisterpassword.TabIndex = 35;
-            this.txtRegisterpassword.TextChanged += new System.EventHandler(this.txtRegisterpassword_TextChanged);
-            // 
-            // txtRegisterusername
-            // 
-            this.txtRegisterusername.BackColor = System.Drawing.Color.Maroon;
-            this.txtRegisterusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRegisterusername.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.txtRegisterusername.Location = new System.Drawing.Point(24, 37);
-            this.txtRegisterusername.Name = "txtRegisterusername";
-            this.txtRegisterusername.Size = new System.Drawing.Size(150, 23);
-            this.txtRegisterusername.TabIndex = 34;
-            this.txtRegisterusername.TextChanged += new System.EventHandler(this.txtRegisterusername_TextChanged);
-            // 
-            // gbLogin
-            // 
-            this.gbLogin.Controls.Add(this.checkboxRememberme);
-            this.gbLogin.Controls.Add(this.btnLoginlogin);
-            this.gbLogin.Controls.Add(this.lblLoginusername);
-            this.gbLogin.Controls.Add(this.lblLoginpassword);
-            this.gbLogin.Controls.Add(this.textBox1);
-            this.gbLogin.Controls.Add(this.textBox2);
-            this.gbLogin.Location = new System.Drawing.Point(209, 71);
-            this.gbLogin.Name = "gbLogin";
-            this.gbLogin.Size = new System.Drawing.Size(200, 300);
-            this.gbLogin.TabIndex = 17;
-            this.gbLogin.TabStop = false;
-            this.gbLogin.Text = "Login";
-            // 
-            // checkboxRememberme
-            // 
-            this.checkboxRememberme.AutoSize = true;
-            this.checkboxRememberme.Location = new System.Drawing.Point(24, 133);
-            this.checkboxRememberme.Name = "checkboxRememberme";
-            this.checkboxRememberme.Size = new System.Drawing.Size(102, 19);
-            this.checkboxRememberme.TabIndex = 31;
-            this.checkboxRememberme.Text = "Remember me";
-            this.checkboxRememberme.UseVisualStyleBackColor = true;
-            // 
-            // btnLoginlogin
-            // 
-            this.btnLoginlogin.BackColor = System.Drawing.Color.Maroon;
-            this.btnLoginlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoginlogin.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoginlogin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLoginlogin.Location = new System.Drawing.Point(132, 129);
-            this.btnLoginlogin.Name = "btnLoginlogin";
-            this.btnLoginlogin.Size = new System.Drawing.Size(42, 27);
-            this.btnLoginlogin.TabIndex = 30;
-            this.btnLoginlogin.Text = "Login";
-            this.btnLoginlogin.UseVisualStyleBackColor = false;
-            // 
-            // lblLoginusername
-            // 
-            this.lblLoginusername.AutoSize = true;
-            this.lblLoginusername.Location = new System.Drawing.Point(21, 19);
-            this.lblLoginusername.Name = "lblLoginusername";
-            this.lblLoginusername.Size = new System.Drawing.Size(62, 15);
-            this.lblLoginusername.TabIndex = 29;
-            this.lblLoginusername.Text = "Username";
-            // 
-            // lblLoginpassword
-            // 
-            this.lblLoginpassword.AutoSize = true;
-            this.lblLoginpassword.Location = new System.Drawing.Point(21, 63);
-            this.lblLoginpassword.Name = "lblLoginpassword";
-            this.lblLoginpassword.Size = new System.Drawing.Size(61, 15);
-            this.lblLoginpassword.TabIndex = 28;
-            this.lblLoginpassword.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Maroon;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(24, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 23);
-            this.textBox1.TabIndex = 27;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Maroon;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(24, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 23);
-            this.textBox2.TabIndex = 26;
-            // 
-            // lblRegisterlogin
-            // 
-            this.lblRegisterlogin.AutoSize = true;
-            this.lblRegisterlogin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegisterlogin.ForeColor = System.Drawing.Color.Maroon;
-            this.lblRegisterlogin.Location = new System.Drawing.Point(1, 1);
-            this.lblRegisterlogin.Name = "lblRegisterlogin";
-            this.lblRegisterlogin.Size = new System.Drawing.Size(116, 19);
-            this.lblRegisterlogin.TabIndex = 15;
-            this.lblRegisterlogin.Text = "Register / Login";
-            // 
-            // lblInfologingregister
-            // 
-            this.lblInfologingregister.Location = new System.Drawing.Point(3, 20);
-            this.lblInfologingregister.Name = "lblInfologingregister";
-            this.lblInfologingregister.Size = new System.Drawing.Size(612, 35);
-            this.lblInfologingregister.TabIndex = 14;
-            this.lblInfologingregister.Text = resources.GetString("lblInfologingregister.Text");
             // 
             // tabPage3
             // 
@@ -1132,7 +432,6 @@
             // 
             // gbItemstats
             // 
-            this.gbItemstats.Controls.Add(this.button1);
             this.gbItemstats.Controls.Add(this.label7);
             this.gbItemstats.Location = new System.Drawing.Point(147, 23);
             this.gbItemstats.Name = "gbItemstats";
@@ -1140,6 +439,19 @@
             this.gbItemstats.TabIndex = 24;
             this.gbItemstats.TabStop = false;
             this.gbItemstats.Text = "ITEM STAT";
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Maroon;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.Location = new System.Drawing.Point(6, 23);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 23);
+            this.label7.TabIndex = 25;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gbGroupitems
             // 
@@ -1202,6 +514,28 @@
             this.gbUpdate.TabStop = false;
             this.gbUpdate.Text = "Update";
             // 
+            // lblSsid
+            // 
+            this.lblSsid.AutoSize = true;
+            this.lblSsid.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSsid.ForeColor = System.Drawing.Color.Black;
+            this.lblSsid.Location = new System.Drawing.Point(118, 205);
+            this.lblSsid.Name = "lblSsid";
+            this.lblSsid.Size = new System.Drawing.Size(30, 15);
+            this.lblSsid.TabIndex = 26;
+            this.lblSsid.Text = "sSid";
+            // 
+            // txtSsid
+            // 
+            this.txtSsid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSsid.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSsid.ForeColor = System.Drawing.Color.Black;
+            this.txtSsid.Location = new System.Drawing.Point(121, 223);
+            this.txtSsid.Name = "txtSsid";
+            this.txtSsid.ReadOnly = true;
+            this.txtSsid.Size = new System.Drawing.Size(40, 23);
+            this.txtSsid.TabIndex = 25;
+            // 
             // lblMonstername
             // 
             this.lblMonstername.BackColor = System.Drawing.Color.Maroon;
@@ -1235,6 +569,7 @@
             this.txtNoah.Name = "txtNoah";
             this.txtNoah.Size = new System.Drawing.Size(72, 23);
             this.txtNoah.TabIndex = 21;
+            this.txtNoah.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRate1_KeyDown);
             // 
             // lblItemrate
             // 
@@ -1267,6 +602,7 @@
             this.txtRate5.Name = "txtRate5";
             this.txtRate5.Size = new System.Drawing.Size(40, 23);
             this.txtRate5.TabIndex = 16;
+            this.txtRate5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRate1_KeyDown);
             // 
             // txtRate4
             // 
@@ -1277,6 +613,7 @@
             this.txtRate4.Name = "txtRate4";
             this.txtRate4.Size = new System.Drawing.Size(40, 23);
             this.txtRate4.TabIndex = 15;
+            this.txtRate4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRate1_KeyDown);
             // 
             // txtRate3
             // 
@@ -1287,6 +624,7 @@
             this.txtRate3.Name = "txtRate3";
             this.txtRate3.Size = new System.Drawing.Size(40, 23);
             this.txtRate3.TabIndex = 14;
+            this.txtRate3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRate1_KeyDown);
             // 
             // txtRate2
             // 
@@ -1297,6 +635,7 @@
             this.txtRate2.Name = "txtRate2";
             this.txtRate2.Size = new System.Drawing.Size(40, 23);
             this.txtRate2.TabIndex = 13;
+            this.txtRate2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRate1_KeyDown);
             // 
             // txtRate1
             // 
@@ -1307,6 +646,7 @@
             this.txtRate1.Name = "txtRate1";
             this.txtRate1.Size = new System.Drawing.Size(40, 23);
             this.txtRate1.TabIndex = 12;
+            this.txtRate1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRate1_KeyDown);
             // 
             // btnItemadd1
             // 
@@ -1455,10 +795,9 @@
             // 
             // gbMonsters
             // 
-            this.gbMonsters.Controls.Add(this.lbMonstername);
+            this.gbMonsters.Controls.Add(this.lvwMonsters);
             this.gbMonsters.Controls.Add(this.btnMonstersearch);
             this.gbMonsters.Controls.Add(this.txtDropeditormonstersearch);
-            this.gbMonsters.Controls.Add(this.lbMonsterid);
             this.gbMonsters.Location = new System.Drawing.Point(490, 7);
             this.gbMonsters.Name = "gbMonsters";
             this.gbMonsters.Size = new System.Drawing.Size(130, 274);
@@ -1466,15 +805,30 @@
             this.gbMonsters.TabStop = false;
             this.gbMonsters.Text = "Monsters";
             // 
-            // lbMonstername
+            // lvwMonsters
             // 
-            this.lbMonstername.FormattingEnabled = true;
-            this.lbMonstername.ItemHeight = 15;
-            this.lbMonstername.Location = new System.Drawing.Point(5, 39);
-            this.lbMonstername.Name = "lbMonstername";
-            this.lbMonstername.Size = new System.Drawing.Size(120, 229);
-            this.lbMonstername.TabIndex = 32;
-            this.lbMonstername.SelectedIndexChanged += new System.EventHandler(this.lbMonstername_SelectedIndexChanged);
+            this.lvwMonsters.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chMonsterID,
+            this.chMonsterName});
+            this.lvwMonsters.FullRowSelect = true;
+            this.lvwMonsters.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvwMonsters.Location = new System.Drawing.Point(5, 39);
+            this.lvwMonsters.Name = "lvwMonsters";
+            this.lvwMonsters.Size = new System.Drawing.Size(119, 228);
+            this.lvwMonsters.TabIndex = 32;
+            this.lvwMonsters.UseCompatibleStateImageBehavior = false;
+            this.lvwMonsters.View = System.Windows.Forms.View.Details;
+            this.lvwMonsters.SelectedIndexChanged += new System.EventHandler(this.lvwMonsters_SelectedIndexChanged);
+            // 
+            // chMonsterID
+            // 
+            this.chMonsterID.Text = "sSid";
+            this.chMonsterID.Width = 40;
+            // 
+            // chMonsterName
+            // 
+            this.chMonsterName.Text = "strName";
+            this.chMonsterName.Width = 80;
             // 
             // btnMonstersearch
             // 
@@ -1498,21 +852,11 @@
             this.txtDropeditormonstersearch.Name = "txtDropeditormonstersearch";
             this.txtDropeditormonstersearch.Size = new System.Drawing.Size(97, 21);
             this.txtDropeditormonstersearch.TabIndex = 1;
-            // 
-            // lbMonsterid
-            // 
-            this.lbMonsterid.FormattingEnabled = true;
-            this.lbMonsterid.ItemHeight = 15;
-            this.lbMonsterid.Location = new System.Drawing.Point(5, 39);
-            this.lbMonsterid.Name = "lbMonsterid";
-            this.lbMonsterid.Size = new System.Drawing.Size(120, 229);
-            this.lbMonsterid.TabIndex = 0;
-            this.lbMonsterid.SelectedIndexChanged += new System.EventHandler(this.lbMonsterid_SelectedIndexChanged);
+            this.txtDropeditormonstersearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDropeditormonstersearch_KeyUp);
             // 
             // gbItem
             // 
-            this.gbItem.Controls.Add(this.lbItemname);
-            this.gbItem.Controls.Add(this.lbItemid);
+            this.gbItem.Controls.Add(this.lvwItems);
             this.gbItem.Controls.Add(this.btnItemsearch);
             this.gbItem.Controls.Add(this.txtDropeditoritemsearch);
             this.gbItem.Location = new System.Drawing.Point(5, 7);
@@ -1522,24 +866,30 @@
             this.gbItem.TabStop = false;
             this.gbItem.Text = "Items";
             // 
-            // lbItemname
+            // lvwItems
             // 
-            this.lbItemname.FormattingEnabled = true;
-            this.lbItemname.ItemHeight = 15;
-            this.lbItemname.Location = new System.Drawing.Point(5, 39);
-            this.lbItemname.Name = "lbItemname";
-            this.lbItemname.Size = new System.Drawing.Size(120, 229);
-            this.lbItemname.TabIndex = 0;
-            this.lbItemname.SelectedIndexChanged += new System.EventHandler(this.lbItemname_SelectedIndexChanged);
+            this.lvwItems.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.chItemID,
+            this.chItemName});
+            this.lvwItems.FullRowSelect = true;
+            this.lvwItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvwItems.Location = new System.Drawing.Point(5, 39);
+            this.lvwItems.Name = "lvwItems";
+            this.lvwItems.Size = new System.Drawing.Size(119, 228);
+            this.lvwItems.TabIndex = 33;
+            this.lvwItems.UseCompatibleStateImageBehavior = false;
+            this.lvwItems.View = System.Windows.Forms.View.Details;
             // 
-            // lbItemid
+            // chItemID
             // 
-            this.lbItemid.FormattingEnabled = true;
-            this.lbItemid.ItemHeight = 15;
-            this.lbItemid.Location = new System.Drawing.Point(5, 39);
-            this.lbItemid.Name = "lbItemid";
-            this.lbItemid.Size = new System.Drawing.Size(120, 229);
-            this.lbItemid.TabIndex = 1;
+            this.chItemID.DisplayIndex = 1;
+            this.chItemID.Text = "Item ID";
+            // 
+            // chItemName
+            // 
+            this.chItemName.DisplayIndex = 0;
+            this.chItemName.Text = "strName";
+            this.chItemName.Width = 80;
             // 
             // btnItemsearch
             // 
@@ -1563,6 +913,7 @@
             this.txtDropeditoritemsearch.Name = "txtDropeditoritemsearch";
             this.txtDropeditoritemsearch.Size = new System.Drawing.Size(97, 21);
             this.txtDropeditoritemsearch.TabIndex = 1;
+            this.txtDropeditoritemsearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtDropeditoritemsearch_KeyUp);
             // 
             // toolStripknightonline
             // 
@@ -1619,7 +970,7 @@
             this.dropEditorToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dropEditorToolStripMenuItem.ForeColor = System.Drawing.Color.Maroon;
             this.dropEditorToolStripMenuItem.Name = "dropEditorToolStripMenuItem";
-            this.dropEditorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dropEditorToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.dropEditorToolStripMenuItem.Text = "Drop editor";
             this.dropEditorToolStripMenuItem.Click += new System.EventHandler(this.dropEditorToolStripMenuItem_Click);
             // 
@@ -1634,50 +985,417 @@
             this.toolStripDropDownButtontools.Size = new System.Drawing.Size(43, 22);
             this.toolStripDropDownButtontools.Text = "Tools";
             // 
-            // lblSsid
+            // tabPage1
             // 
-            this.lblSsid.AutoSize = true;
-            this.lblSsid.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSsid.ForeColor = System.Drawing.Color.Black;
-            this.lblSsid.Location = new System.Drawing.Point(118, 205);
-            this.lblSsid.Name = "lblSsid";
-            this.lblSsid.Size = new System.Drawing.Size(30, 15);
-            this.lblSsid.TabIndex = 26;
-            this.lblSsid.Text = "sSid";
+            this.tabPage1.BackColor = System.Drawing.Color.Maroon;
+            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.panelFirst);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(631, 445);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Settings";
             // 
-            // txtSsid
+            // panelFirst
             // 
-            this.txtSsid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSsid.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSsid.ForeColor = System.Drawing.Color.Black;
-            this.txtSsid.Location = new System.Drawing.Point(121, 223);
-            this.txtSsid.Name = "txtSsid";
-            this.txtSsid.ReadOnly = true;
-            this.txtSsid.Size = new System.Drawing.Size(40, 23);
-            this.txtSsid.TabIndex = 25;
+            this.panelFirst.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelFirst.Controls.Add(this.gbSettings);
+            this.panelFirst.Controls.Add(this.gbDebugger);
+            this.panelFirst.Controls.Add(this.gbConnect);
+            this.panelFirst.Controls.Add(this.lblConnection);
+            this.panelFirst.Controls.Add(this.lblInfo);
+            this.panelFirst.Controls.Add(this.btnFirstnext);
+            this.panelFirst.Controls.Add(this.btnFirstcancel);
+            this.panelFirst.Location = new System.Drawing.Point(6, 6);
+            this.panelFirst.Name = "panelFirst";
+            this.panelFirst.Size = new System.Drawing.Size(618, 430);
+            this.panelFirst.TabIndex = 14;
             // 
-            // label7
+            // gbSettings
             // 
-            this.label7.BackColor = System.Drawing.Color.Maroon;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label7.Location = new System.Drawing.Point(6, 23);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 23);
-            this.label7.TabIndex = 25;
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gbSettings.Controls.Add(this.label6);
+            this.gbSettings.Controls.Add(this.radiobuttonDefault);
+            this.gbSettings.Controls.Add(this.lblOn);
+            this.gbSettings.Controls.Add(this.radiobuttonCustom);
+            this.gbSettings.Controls.Add(this.lblOff);
+            this.gbSettings.Controls.Add(this.checkBoxOff1);
+            this.gbSettings.Controls.Add(this.checkBoxOn1);
+            this.gbSettings.Controls.Add(this.lblSaveconnection);
+            this.gbSettings.Location = new System.Drawing.Point(5, 51);
+            this.gbSettings.Name = "gbSettings";
+            this.gbSettings.Size = new System.Drawing.Size(610, 100);
+            this.gbSettings.TabIndex = 21;
+            this.gbSettings.TabStop = false;
+            this.gbSettings.Text = "Settings";
             // 
-            // button1
+            // label6
             // 
-            this.button1.Location = new System.Drawing.Point(55, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(237, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 15);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "label6";
+            // 
+            // radiobuttonDefault
+            // 
+            this.radiobuttonDefault.AutoSize = true;
+            this.radiobuttonDefault.Checked = true;
+            this.radiobuttonDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radiobuttonDefault.ForeColor = System.Drawing.Color.Black;
+            this.radiobuttonDefault.Location = new System.Drawing.Point(471, 10);
+            this.radiobuttonDefault.Name = "radiobuttonDefault";
+            this.radiobuttonDefault.Size = new System.Drawing.Size(58, 17);
+            this.radiobuttonDefault.TabIndex = 21;
+            this.radiobuttonDefault.TabStop = true;
+            this.radiobuttonDefault.Text = "Default";
+            this.radiobuttonDefault.UseVisualStyleBackColor = true;
+            this.radiobuttonDefault.CheckedChanged += new System.EventHandler(this.radiobuttonDefault_CheckedChanged);
+            // 
+            // lblOn
+            // 
+            this.lblOn.AutoSize = true;
+            this.lblOn.Location = new System.Drawing.Point(120, 10);
+            this.lblOn.Name = "lblOn";
+            this.lblOn.Size = new System.Drawing.Size(24, 15);
+            this.lblOn.TabIndex = 4;
+            this.lblOn.Text = "ON";
+            // 
+            // radiobuttonCustom
+            // 
+            this.radiobuttonCustom.AutoSize = true;
+            this.radiobuttonCustom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radiobuttonCustom.ForeColor = System.Drawing.Color.Black;
+            this.radiobuttonCustom.Location = new System.Drawing.Point(541, 10);
+            this.radiobuttonCustom.Name = "radiobuttonCustom";
+            this.radiobuttonCustom.Size = new System.Drawing.Size(59, 17);
+            this.radiobuttonCustom.TabIndex = 20;
+            this.radiobuttonCustom.Text = "Custom";
+            this.radiobuttonCustom.UseVisualStyleBackColor = true;
+            this.radiobuttonCustom.CheckedChanged += new System.EventHandler(this.radiobuttonCustom_CheckedChanged);
+            // 
+            // lblOff
+            // 
+            this.lblOff.AutoSize = true;
+            this.lblOff.Location = new System.Drawing.Point(150, 10);
+            this.lblOff.Name = "lblOff";
+            this.lblOff.Size = new System.Drawing.Size(28, 15);
+            this.lblOff.TabIndex = 5;
+            this.lblOff.Text = "OFF";
+            // 
+            // checkBoxOff1
+            // 
+            this.checkBoxOff1.AutoSize = true;
+            this.checkBoxOff1.Enabled = false;
+            this.checkBoxOff1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxOff1.Location = new System.Drawing.Point(158, 30);
+            this.checkBoxOff1.Name = "checkBoxOff1";
+            this.checkBoxOff1.Size = new System.Drawing.Size(12, 11);
+            this.checkBoxOff1.TabIndex = 4;
+            this.checkBoxOff1.UseVisualStyleBackColor = true;
+            this.checkBoxOff1.CheckedChanged += new System.EventHandler(this.checkBoxOff1_CheckedChanged);
+            // 
+            // checkBoxOn1
+            // 
+            this.checkBoxOn1.AutoSize = true;
+            this.checkBoxOn1.Checked = true;
+            this.checkBoxOn1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxOn1.Enabled = false;
+            this.checkBoxOn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxOn1.Location = new System.Drawing.Point(126, 30);
+            this.checkBoxOn1.Name = "checkBoxOn1";
+            this.checkBoxOn1.Size = new System.Drawing.Size(12, 11);
+            this.checkBoxOn1.TabIndex = 2;
+            this.checkBoxOn1.UseVisualStyleBackColor = true;
+            this.checkBoxOn1.CheckedChanged += new System.EventHandler(this.checkBoxOn1_CheckedChanged);
+            // 
+            // lblSaveconnection
+            // 
+            this.lblSaveconnection.AutoSize = true;
+            this.lblSaveconnection.Location = new System.Drawing.Point(3, 28);
+            this.lblSaveconnection.Name = "lblSaveconnection";
+            this.lblSaveconnection.Size = new System.Drawing.Size(95, 15);
+            this.lblSaveconnection.TabIndex = 7;
+            this.lblSaveconnection.Text = "Save connection";
+            // 
+            // gbDebugger
+            // 
+            this.gbDebugger.Controls.Add(this.richtextboxDebugger);
+            this.gbDebugger.Controls.Add(this.btnCopydebugger);
+            this.gbDebugger.Location = new System.Drawing.Point(5, 278);
+            this.gbDebugger.Name = "gbDebugger";
+            this.gbDebugger.Size = new System.Drawing.Size(610, 116);
+            this.gbDebugger.TabIndex = 18;
+            this.gbDebugger.TabStop = false;
+            this.gbDebugger.Text = "Debugger";
+            // 
+            // richtextboxDebugger
+            // 
+            this.richtextboxDebugger.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.richtextboxDebugger.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richtextboxDebugger.ForeColor = System.Drawing.Color.Maroon;
+            this.richtextboxDebugger.Location = new System.Drawing.Point(6, 20);
+            this.richtextboxDebugger.Name = "richtextboxDebugger";
+            this.richtextboxDebugger.ReadOnly = true;
+            this.richtextboxDebugger.Size = new System.Drawing.Size(505, 90);
+            this.richtextboxDebugger.TabIndex = 18;
+            this.richtextboxDebugger.Text = "";
+            this.richtextboxDebugger.WordWrap = false;
+            // 
+            // btnCopydebugger
+            // 
+            this.btnCopydebugger.BackColor = System.Drawing.Color.Maroon;
+            this.btnCopydebugger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCopydebugger.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCopydebugger.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCopydebugger.Location = new System.Drawing.Point(517, 83);
+            this.btnCopydebugger.Name = "btnCopydebugger";
+            this.btnCopydebugger.Size = new System.Drawing.Size(87, 27);
+            this.btnCopydebugger.TabIndex = 17;
+            this.btnCopydebugger.Text = "Copy";
+            this.btnCopydebugger.UseVisualStyleBackColor = false;
+            this.btnCopydebugger.Click += new System.EventHandler(this.btnCopydebugger_Click);
+            // 
+            // gbConnect
+            // 
+            this.gbConnect.Controls.Add(this.radioButtonMySQL);
+            this.gbConnect.Controls.Add(this.checkboxManually);
+            this.gbConnect.Controls.Add(this.lblDBUsername);
+            this.gbConnect.Controls.Add(this.lblDBPassword);
+            this.gbConnect.Controls.Add(this.txtPassword);
+            this.gbConnect.Controls.Add(this.lbServerName);
+            this.gbConnect.Controls.Add(this.txtUsername);
+            this.gbConnect.Controls.Add(this.txtServername);
+            this.gbConnect.Controls.Add(this.lblDatabase);
+            this.gbConnect.Controls.Add(this.comboboxDatabase);
+            this.gbConnect.Controls.Add(this.btnTestconnection);
+            this.gbConnect.Controls.Add(this.lblTypeofconnection);
+            this.gbConnect.Controls.Add(this.radioButtonSQL);
+            this.gbConnect.Controls.Add(this.radioButtonODBC);
+            this.gbConnect.Location = new System.Drawing.Point(5, 157);
+            this.gbConnect.Name = "gbConnect";
+            this.gbConnect.Size = new System.Drawing.Size(610, 116);
+            this.gbConnect.TabIndex = 16;
+            this.gbConnect.TabStop = false;
+            this.gbConnect.Text = "Connect";
+            // 
+            // radioButtonMySQL
+            // 
+            this.radioButtonMySQL.AutoSize = true;
+            this.radioButtonMySQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonMySQL.Location = new System.Drawing.Point(9, 75);
+            this.radioButtonMySQL.Name = "radioButtonMySQL";
+            this.radioButtonMySQL.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonMySQL.TabIndex = 26;
+            this.radioButtonMySQL.TabStop = true;
+            this.radioButtonMySQL.Text = "MySQL";
+            this.radioButtonMySQL.UseVisualStyleBackColor = true;
+            this.radioButtonMySQL.Visible = false;
+            // 
+            // checkboxManually
+            // 
+            this.checkboxManually.AutoSize = true;
+            this.checkboxManually.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkboxManually.Location = new System.Drawing.Point(517, 23);
+            this.checkboxManually.Name = "checkboxManually";
+            this.checkboxManually.Size = new System.Drawing.Size(65, 17);
+            this.checkboxManually.TabIndex = 8;
+            this.checkboxManually.Text = "Manually";
+            this.checkboxManually.UseVisualStyleBackColor = true;
+            this.checkboxManually.CheckedChanged += new System.EventHandler(this.checkboxManually_CheckedChanged);
+            // 
+            // lblDBUsername
+            // 
+            this.lblDBUsername.AutoSize = true;
+            this.lblDBUsername.Location = new System.Drawing.Point(358, 23);
+            this.lblDBUsername.Name = "lblDBUsername";
+            this.lblDBUsername.Size = new System.Drawing.Size(62, 15);
+            this.lblDBUsername.TabIndex = 25;
+            this.lblDBUsername.Text = "Username";
+            // 
+            // lblDBPassword
+            // 
+            this.lblDBPassword.AutoSize = true;
+            this.lblDBPassword.Location = new System.Drawing.Point(358, 67);
+            this.lblDBPassword.Name = "lblDBPassword";
+            this.lblDBPassword.Size = new System.Drawing.Size(61, 15);
+            this.lblDBPassword.TabIndex = 24;
+            this.lblDBPassword.Text = "Password";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.Maroon;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPassword.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPassword.Location = new System.Drawing.Point(361, 85);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(150, 23);
+            this.txtPassword.TabIndex = 12;
+            // 
+            // lbServerName
+            // 
+            this.lbServerName.AutoSize = true;
+            this.lbServerName.Location = new System.Drawing.Point(202, 23);
+            this.lbServerName.Name = "lbServerName";
+            this.lbServerName.Size = new System.Drawing.Size(74, 15);
+            this.lbServerName.TabIndex = 22;
+            this.lbServerName.Text = "Server name";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.Maroon;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsername.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtUsername.Location = new System.Drawing.Point(361, 41);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(150, 23);
+            this.txtUsername.TabIndex = 11;
+            // 
+            // txtServername
+            // 
+            this.txtServername.BackColor = System.Drawing.Color.Maroon;
+            this.txtServername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtServername.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtServername.Location = new System.Drawing.Point(205, 41);
+            this.txtServername.Name = "txtServername";
+            this.txtServername.Size = new System.Drawing.Size(150, 23);
+            this.txtServername.TabIndex = 9;
+            // 
+            // lblDatabase
+            // 
+            this.lblDatabase.AutoSize = true;
+            this.lblDatabase.Location = new System.Drawing.Point(202, 67);
+            this.lblDatabase.Name = "lblDatabase";
+            this.lblDatabase.Size = new System.Drawing.Size(59, 15);
+            this.lblDatabase.TabIndex = 19;
+            this.lblDatabase.Text = "Database";
+            // 
+            // comboboxDatabase
+            // 
+            this.comboboxDatabase.BackColor = System.Drawing.Color.Maroon;
+            this.comboboxDatabase.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxDatabase.Enabled = false;
+            this.comboboxDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboboxDatabase.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.comboboxDatabase.FormattingEnabled = true;
+            this.comboboxDatabase.Location = new System.Drawing.Point(205, 85);
+            this.comboboxDatabase.Name = "comboboxDatabase";
+            this.comboboxDatabase.Size = new System.Drawing.Size(150, 23);
+            this.comboboxDatabase.TabIndex = 10;
+            // 
+            // btnTestconnection
+            // 
+            this.btnTestconnection.BackColor = System.Drawing.Color.Maroon;
+            this.btnTestconnection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestconnection.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTestconnection.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnTestconnection.Location = new System.Drawing.Point(517, 83);
+            this.btnTestconnection.Name = "btnTestconnection";
+            this.btnTestconnection.Size = new System.Drawing.Size(87, 27);
+            this.btnTestconnection.TabIndex = 13;
+            this.btnTestconnection.Text = "Get DB";
+            this.btnTestconnection.UseVisualStyleBackColor = false;
+            this.btnTestconnection.Click += new System.EventHandler(this.btnTestconnection_Click);
+            // 
+            // lblTypeofconnection
+            // 
+            this.lblTypeofconnection.AutoSize = true;
+            this.lblTypeofconnection.Location = new System.Drawing.Point(6, 23);
+            this.lblTypeofconnection.Name = "lblTypeofconnection";
+            this.lblTypeofconnection.Size = new System.Drawing.Size(108, 15);
+            this.lblTypeofconnection.TabIndex = 13;
+            this.lblTypeofconnection.Text = "Type of connection";
+            // 
+            // radioButtonSQL
+            // 
+            this.radioButtonSQL.AutoSize = true;
+            this.radioButtonSQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonSQL.Location = new System.Drawing.Point(9, 58);
+            this.radioButtonSQL.Name = "radioButtonSQL";
+            this.radioButtonSQL.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonSQL.TabIndex = 6;
+            this.radioButtonSQL.TabStop = true;
+            this.radioButtonSQL.Text = "SQL";
+            this.radioButtonSQL.UseVisualStyleBackColor = true;
+            this.radioButtonSQL.CheckedChanged += new System.EventHandler(this.radioButtonSQL_CheckedChanged);
+            // 
+            // radioButtonODBC
+            // 
+            this.radioButtonODBC.AutoSize = true;
+            this.radioButtonODBC.Checked = true;
+            this.radioButtonODBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButtonODBC.Location = new System.Drawing.Point(9, 41);
+            this.radioButtonODBC.Name = "radioButtonODBC";
+            this.radioButtonODBC.Size = new System.Drawing.Size(54, 17);
+            this.radioButtonODBC.TabIndex = 5;
+            this.radioButtonODBC.TabStop = true;
+            this.radioButtonODBC.Text = "ODBC\r\n";
+            this.radioButtonODBC.UseVisualStyleBackColor = true;
+            this.radioButtonODBC.CheckedChanged += new System.EventHandler(this.radioButtonODBC_CheckedChanged);
+            // 
+            // lblConnection
+            // 
+            this.lblConnection.AutoSize = true;
+            this.lblConnection.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConnection.ForeColor = System.Drawing.Color.Maroon;
+            this.lblConnection.Location = new System.Drawing.Point(1, 1);
+            this.lblConnection.Name = "lblConnection";
+            this.lblConnection.Size = new System.Drawing.Size(100, 19);
+            this.lblConnection.TabIndex = 15;
+            this.lblConnection.Text = "CONNECTION";
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.Location = new System.Drawing.Point(3, 20);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(612, 35);
+            this.lblInfo.TabIndex = 14;
+            this.lblInfo.Text = "Set your settings, this will be mainly used. You will be able to change these set" +
+    "tings anytime. If you dont know what these things do please check \"Default\", or " +
+    "just check \"Custom\".";
+            // 
+            // btnFirstnext
+            // 
+            this.btnFirstnext.BackColor = System.Drawing.Color.Maroon;
+            this.btnFirstnext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFirstnext.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFirstnext.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFirstnext.Location = new System.Drawing.Point(522, 400);
+            this.btnFirstnext.Name = "btnFirstnext";
+            this.btnFirstnext.Size = new System.Drawing.Size(87, 27);
+            this.btnFirstnext.TabIndex = 0;
+            this.btnFirstnext.Text = "Next";
+            this.btnFirstnext.UseVisualStyleBackColor = false;
+            this.btnFirstnext.Click += new System.EventHandler(this.btnFirstnext_Click);
+            // 
+            // btnFirstcancel
+            // 
+            this.btnFirstcancel.BackColor = System.Drawing.Color.Maroon;
+            this.btnFirstcancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFirstcancel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFirstcancel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnFirstcancel.Location = new System.Drawing.Point(429, 400);
+            this.btnFirstcancel.Name = "btnFirstcancel";
+            this.btnFirstcancel.Size = new System.Drawing.Size(87, 27);
+            this.btnFirstcancel.TabIndex = 3;
+            this.btnFirstcancel.Text = "Cancel";
+            this.btnFirstcancel.UseVisualStyleBackColor = false;
+            this.btnFirstcancel.Click += new System.EventHandler(this.btnFirstcancel_Click);
+            // 
+            // tabcontrolMain
+            // 
+            this.tabcontrolMain.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabcontrolMain.Controls.Add(this.tabPage1);
+            this.tabcontrolMain.Controls.Add(this.tabPage3);
+            this.tabcontrolMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabcontrolMain.HotTrack = true;
+            this.tabcontrolMain.Location = new System.Drawing.Point(0, 0);
+            this.tabcontrolMain.Multiline = true;
+            this.tabcontrolMain.Name = "tabcontrolMain";
+            this.tabcontrolMain.SelectedIndex = 0;
+            this.tabcontrolMain.Size = new System.Drawing.Size(639, 476);
+            this.tabcontrolMain.TabIndex = 14;
             // 
             // frmMain
             // 
@@ -1690,32 +1408,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmMain";
             this.Text = "Beta001";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
-            this.tabcontrolMain.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.panelFirst.ResumeLayout(false);
-            this.panelFirst.PerformLayout();
-            this.gbSettings.ResumeLayout(false);
-            this.gbSettings.PerformLayout();
-            this.gbDebugger.ResumeLayout(false);
-            this.gbDebugger.PerformLayout();
-            this.gbConnect.ResumeLayout(false);
-            this.gbConnect.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.panelLogin.ResumeLayout(false);
-            this.panelLogin.PerformLayout();
-            this.statusstripLogin.ResumeLayout(false);
-            this.statusstripLogin.PerformLayout();
-            this.gbRecover.ResumeLayout(false);
-            this.gbRecover.PerformLayout();
-            this.gbRegister.ResumeLayout(false);
-            this.gbRegister.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck1)).EndInit();
-            this.gbLogin.ResumeLayout(false);
-            this.gbLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck3)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panelDropeditor.ResumeLayout(false);
@@ -1732,107 +1428,71 @@
             this.gbItem.PerformLayout();
             this.toolStripknightonline.ResumeLayout(false);
             this.toolStripknightonline.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.panelFirst.ResumeLayout(false);
+            this.panelFirst.PerformLayout();
+            this.gbSettings.ResumeLayout(false);
+            this.gbSettings.PerformLayout();
+            this.gbDebugger.ResumeLayout(false);
+            this.gbConnect.ResumeLayout(false);
+            this.gbConnect.PerformLayout();
+            this.tabcontrolMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabcontrolMain;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button btnFirstnext;
-        private System.Windows.Forms.Label lblTypeofconnection;
-        private System.Windows.Forms.Button btnFirstcancel;
-        private System.Windows.Forms.RadioButton radioButtonSQL;
-        private System.Windows.Forms.RadioButton radioButtonODBC;
-        private System.Windows.Forms.CheckBox checkBoxOn;
-        private System.Windows.Forms.CheckBox checkBoxOff;
-        private System.Windows.Forms.CheckBox checkBoxOff1;
-        private System.Windows.Forms.Label lblOn;
-        private System.Windows.Forms.CheckBox checkBoxOn1;
-        private System.Windows.Forms.Label lblOff;
-        private System.Windows.Forms.Label lblSaveconnection;
-        private System.Windows.Forms.Label lblKeepconnected;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel panelFirst;
-        private System.Windows.Forms.Label lblInfo;
-        private System.Windows.Forms.GroupBox gbConnect;
-        private System.Windows.Forms.Button btnTestconnection;
-        private System.Windows.Forms.Label lblConnection;
-        private System.Windows.Forms.ComboBox comboboxDatabase;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtServername;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.CheckBox checkboxManually;
-        private System.Windows.Forms.GroupBox gbDebugger;
-        private System.Windows.Forms.RichTextBox richtextboxDebugger;
-        private System.Windows.Forms.Button btnCopydebugger;
-        private System.Windows.Forms.RadioButton radiobuttonCustom;
-        private System.Windows.Forms.GroupBox gbSettings;
-        private System.Windows.Forms.RadioButton radiobuttonDefault;
-        private System.Windows.Forms.Panel panelLogin;
-        private System.Windows.Forms.GroupBox gbRegister;
-        private System.Windows.Forms.GroupBox gbLogin;
-        private System.Windows.Forms.Label lblRegisterlogin;
         private System.Windows.Forms.Label lblInfologingregister;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnRecover;
-        private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.TextBox txtRegistersecuritycode;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtRegisteremail;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtRegisterpassword;
-        private System.Windows.Forms.TextBox txtRegisterusername;
-        private System.Windows.Forms.Label lblLoginusername;
-        private System.Windows.Forms.Label lblLoginpassword;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblRegisterlogin;
+        private System.Windows.Forms.GroupBox gbLogin;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.GroupBox gbRecover;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Panel panelRight;
-        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblLoginpassword;
+        private System.Windows.Forms.Label lblLoginusername;
         private System.Windows.Forms.Button btnLoginlogin;
         private System.Windows.Forms.CheckBox checkboxRememberme;
-        private System.Windows.Forms.StatusStrip statusstripLogin;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelStatus;
+        private System.Windows.Forms.GroupBox gbRegister;
+        private System.Windows.Forms.TextBox txtRegisterusername;
+        private System.Windows.Forms.TextBox txtRegisterpassword;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtRegisteremail;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtRegistersecuritycode;
         private System.Windows.Forms.Button btnRegisterinsert;
-        private System.Windows.Forms.PictureBox pictureboxRegistercheck3;
-        private System.Windows.Forms.PictureBox pictureboxRegistercheck2;
         private System.Windows.Forms.PictureBox pictureboxRegistercheck1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureboxRegistercheck2;
+        private System.Windows.Forms.PictureBox pictureboxRegistercheck3;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnRecover;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.GroupBox gbRecover;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Panel panelRight;
+        private System.Windows.Forms.StatusStrip statusstripLogin;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabeldate;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelStatus;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ToolStrip toolStripknightonline;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtontools;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtonfile;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtoneditors;
-        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.Panel panelDropeditor;
-        private System.Windows.Forms.GroupBox gbItem;
-        private System.Windows.Forms.ListBox lbItemname;
-        private System.Windows.Forms.ToolStripMenuItem dropEditorToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.GroupBox gbDebuggerdrop;
+        private System.Windows.Forms.RichTextBox richTextBoxdropdebugger;
+        private System.Windows.Forms.GroupBox gbItemstats;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox gbGroupitems;
         private System.Windows.Forms.ListBox lbGroupitems;
         private System.Windows.Forms.GroupBox gbItems;
-        private System.Windows.Forms.GroupBox gbMonsters;
-        private System.Windows.Forms.Button btnMonstersearch;
-        private System.Windows.Forms.TextBox txtDropeditormonstersearch;
-        private System.Windows.Forms.ListBox lbMonsterid;
-        private System.Windows.Forms.Button btnItemsearch;
-        private System.Windows.Forms.TextBox txtDropeditoritemsearch;
         private System.Windows.Forms.GroupBox gbUpdate;
+        private System.Windows.Forms.Label lblSsid;
+        private System.Windows.Forms.TextBox txtSsid;
+        private System.Windows.Forms.Label lblMonstername;
         private System.Windows.Forms.Label lblNoah;
         private System.Windows.Forms.TextBox txtNoah;
         private System.Windows.Forms.Label lblItemrate;
@@ -1853,18 +1513,59 @@
         private System.Windows.Forms.TextBox txtItem3;
         private System.Windows.Forms.TextBox txtItem2;
         private System.Windows.Forms.TextBox txtItem1;
-        private System.Windows.Forms.GroupBox gbItemstats;
-        private System.Windows.Forms.Label lblMonstername;
-        private System.Windows.Forms.ListBox lbItemid;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.GroupBox gbDebuggerdrop;
-        private System.Windows.Forms.RichTextBox richTextBoxdropdebugger;
-        private System.Windows.Forms.ListBox lbMonstername;
-        private System.Windows.Forms.Label lblSsid;
-        private System.Windows.Forms.TextBox txtSsid;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox gbMonsters;
+        private System.Windows.Forms.Button btnMonstersearch;
+        private System.Windows.Forms.TextBox txtDropeditormonstersearch;
+        private System.Windows.Forms.GroupBox gbItem;
+        private System.Windows.Forms.Button btnItemsearch;
+        private System.Windows.Forms.TextBox txtDropeditoritemsearch;
+        private System.Windows.Forms.ToolStrip toolStripknightonline;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtonfile;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtoneditors;
+        private System.Windows.Forms.ToolStripMenuItem dropEditorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtontools;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Panel panelFirst;
+        private System.Windows.Forms.GroupBox gbSettings;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RadioButton radiobuttonDefault;
+        private System.Windows.Forms.Label lblOn;
+        private System.Windows.Forms.RadioButton radiobuttonCustom;
+        private System.Windows.Forms.Label lblOff;
+        private System.Windows.Forms.CheckBox checkBoxOff1;
+        private System.Windows.Forms.CheckBox checkBoxOn1;
+        private System.Windows.Forms.Label lblSaveconnection;
+        private System.Windows.Forms.GroupBox gbDebugger;
+        private System.Windows.Forms.RichTextBox richtextboxDebugger;
+        private System.Windows.Forms.Button btnCopydebugger;
+        private System.Windows.Forms.GroupBox gbConnect;
+        private System.Windows.Forms.RadioButton radioButtonMySQL;
+        private System.Windows.Forms.CheckBox checkboxManually;
+        private System.Windows.Forms.Label lblDBUsername;
+        private System.Windows.Forms.Label lblDBPassword;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lbServerName;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtServername;
+        private System.Windows.Forms.Label lblDatabase;
+        private System.Windows.Forms.ComboBox comboboxDatabase;
+        private System.Windows.Forms.Button btnTestconnection;
+        private System.Windows.Forms.Label lblTypeofconnection;
+        private System.Windows.Forms.RadioButton radioButtonSQL;
+        private System.Windows.Forms.RadioButton radioButtonODBC;
+        private System.Windows.Forms.Label lblConnection;
+        private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Button btnFirstnext;
+        private System.Windows.Forms.Button btnFirstcancel;
+        private System.Windows.Forms.TabControl tabcontrolMain;
+        private System.Windows.Forms.ListView lvwMonsters;
+        private System.Windows.Forms.ColumnHeader chMonsterID;
+        private System.Windows.Forms.ColumnHeader chMonsterName;
+        private System.Windows.Forms.ListView lvwItems;
+        private System.Windows.Forms.ColumnHeader chItemID;
+        private System.Windows.Forms.ColumnHeader chItemName;
+
 
 
 

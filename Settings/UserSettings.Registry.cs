@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+
 namespace MysteryGuest_INC
 {
     class RegistryUserSettings : UserSettings
@@ -28,6 +29,13 @@ namespace MysteryGuest_INC
             UpdateSetting(key, value);
         }
 
+        public override string GetStringFromUserConfig(string key, string defaultValue = "")
+        {
+            var value = (string)GetRegistryValue(key, defaultValue);
+            UpdateSetting(key, value);
+            return value;
+        }
+
         public override string GetString(string key, string defaultValue = "")
         {
             bool result;
@@ -35,9 +43,7 @@ namespace MysteryGuest_INC
             if (result)
                 return value;
 
-            value = (string)GetRegistryValue(key, defaultValue);
-            UpdateSetting(key, value);
-            return value;
+            return GetStringFromUserConfig(key, defaultValue);
         }
 
         public override void SetString(string key, string value)
@@ -60,7 +66,7 @@ namespace MysteryGuest_INC
 
                 return result;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // error handling
                 return null;
@@ -77,7 +83,7 @@ namespace MysteryGuest_INC
                 regKey.Close();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // error handling
                 return false;

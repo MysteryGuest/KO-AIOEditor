@@ -31,6 +31,7 @@ namespace MysteryGuest_INC
                     Settings = new RegistryUserSettings();
                     break;
             }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMain());
