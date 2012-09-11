@@ -29,22 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.lblInfologingregister = new System.Windows.Forms.Label();
-            this.lblRegisterlogin = new System.Windows.Forms.Label();
-            this.gbLogin = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtRegistersecuritycode = new System.Windows.Forms.TextBox();
-            this.btnRegisterinsert = new System.Windows.Forms.Button();
-            this.pictureboxRegistercheck1 = new System.Windows.Forms.PictureBox();
-            this.pictureboxRegistercheck2 = new System.Windows.Forms.PictureBox();
-            this.pictureboxRegistercheck3 = new System.Windows.Forms.PictureBox();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.btnRecover = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.gbRecover = new System.Windows.Forms.GroupBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -122,7 +106,6 @@
             this.richtextboxDebugger = new System.Windows.Forms.RichTextBox();
             this.btnCopydebugger = new System.Windows.Forms.Button();
             this.gbConnect = new System.Windows.Forms.GroupBox();
-            this.radioButtonMySQL = new System.Windows.Forms.RadioButton();
             this.checkboxManually = new System.Windows.Forms.CheckBox();
             this.lblDBUsername = new System.Windows.Forms.Label();
             this.lblDBPassword = new System.Windows.Forms.Label();
@@ -141,9 +124,6 @@
             this.btnFirstnext = new System.Windows.Forms.Button();
             this.btnFirstcancel = new System.Windows.Forms.Button();
             this.tabcontrolMain = new System.Windows.Forms.TabControl();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck3)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panelDropeditor.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -162,132 +142,6 @@
             this.gbConnect.SuspendLayout();
             this.tabcontrolMain.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblInfologingregister
-            // 
-            this.lblInfologingregister.Location = new System.Drawing.Point(3, 20);
-            this.lblInfologingregister.Name = "lblInfologingregister";
-            this.lblInfologingregister.Size = new System.Drawing.Size(612, 35);
-            this.lblInfologingregister.TabIndex = 14;
-            // 
-            // lblRegisterlogin
-            // 
-            this.lblRegisterlogin.AutoSize = true;
-            this.lblRegisterlogin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegisterlogin.ForeColor = System.Drawing.Color.Maroon;
-            this.lblRegisterlogin.Location = new System.Drawing.Point(1, 1);
-            this.lblRegisterlogin.Name = "lblRegisterlogin";
-            this.lblRegisterlogin.Size = new System.Drawing.Size(116, 19);
-            this.lblRegisterlogin.TabIndex = 15;
-            // 
-            // gbLogin
-            // 
-            this.gbLogin.Location = new System.Drawing.Point(209, 71);
-            this.gbLogin.Name = "gbLogin";
-            this.gbLogin.Size = new System.Drawing.Size(200, 300);
-            this.gbLogin.TabIndex = 17;
-            this.gbLogin.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Maroon;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(24, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 20);
-            this.textBox2.TabIndex = 26;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Maroon;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Location = new System.Drawing.Point(24, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 27;
-            // 
-            // label11
-            // 
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 23);
-            this.label11.TabIndex = 0;
-            // 
-            // label10
-            // 
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 23);
-            this.label10.TabIndex = 0;
-            // 
-            // txtRegistersecuritycode
-            // 
-            this.txtRegistersecuritycode.Location = new System.Drawing.Point(0, 0);
-            this.txtRegistersecuritycode.Name = "txtRegistersecuritycode";
-            this.txtRegistersecuritycode.Size = new System.Drawing.Size(100, 20);
-            this.txtRegistersecuritycode.TabIndex = 0;
-            // 
-            // btnRegisterinsert
-            // 
-            this.btnRegisterinsert.Location = new System.Drawing.Point(0, 0);
-            this.btnRegisterinsert.Name = "btnRegisterinsert";
-            this.btnRegisterinsert.Size = new System.Drawing.Size(75, 23);
-            this.btnRegisterinsert.TabIndex = 0;
-            // 
-            // pictureboxRegistercheck1
-            // 
-            this.pictureboxRegistercheck1.Location = new System.Drawing.Point(0, 0);
-            this.pictureboxRegistercheck1.Name = "pictureboxRegistercheck1";
-            this.pictureboxRegistercheck1.Size = new System.Drawing.Size(100, 50);
-            this.pictureboxRegistercheck1.TabIndex = 0;
-            this.pictureboxRegistercheck1.TabStop = false;
-            // 
-            // pictureboxRegistercheck2
-            // 
-            this.pictureboxRegistercheck2.Location = new System.Drawing.Point(0, 0);
-            this.pictureboxRegistercheck2.Name = "pictureboxRegistercheck2";
-            this.pictureboxRegistercheck2.Size = new System.Drawing.Size(100, 50);
-            this.pictureboxRegistercheck2.TabIndex = 0;
-            this.pictureboxRegistercheck2.TabStop = false;
-            // 
-            // pictureboxRegistercheck3
-            // 
-            this.pictureboxRegistercheck3.Location = new System.Drawing.Point(0, 0);
-            this.pictureboxRegistercheck3.Name = "pictureboxRegistercheck3";
-            this.pictureboxRegistercheck3.Size = new System.Drawing.Size(100, 50);
-            this.pictureboxRegistercheck3.TabIndex = 0;
-            this.pictureboxRegistercheck3.TabStop = false;
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.Location = new System.Drawing.Point(0, 0);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
-            this.btnRegister.TabIndex = 0;
-            // 
-            // btnRecover
-            // 
-            this.btnRecover.Location = new System.Drawing.Point(0, 0);
-            this.btnRecover.Name = "btnRecover";
-            this.btnRecover.Size = new System.Drawing.Size(75, 23);
-            this.btnRecover.TabIndex = 0;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Location = new System.Drawing.Point(0, 0);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 0;
-            // 
-            // gbRecover
-            // 
-            this.gbRecover.Location = new System.Drawing.Point(0, 0);
-            this.gbRecover.Name = "gbRecover";
-            this.gbRecover.Size = new System.Drawing.Size(200, 100);
-            this.gbRecover.TabIndex = 0;
-            this.gbRecover.TabStop = false;
             // 
             // textBox10
             // 
@@ -1159,7 +1013,6 @@
             // 
             // gbConnect
             // 
-            this.gbConnect.Controls.Add(this.radioButtonMySQL);
             this.gbConnect.Controls.Add(this.checkboxManually);
             this.gbConnect.Controls.Add(this.lblDBUsername);
             this.gbConnect.Controls.Add(this.lblDBPassword);
@@ -1180,26 +1033,13 @@
             this.gbConnect.TabStop = false;
             this.gbConnect.Text = "Connect";
             // 
-            // radioButtonMySQL
-            // 
-            this.radioButtonMySQL.AutoSize = true;
-            this.radioButtonMySQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButtonMySQL.Location = new System.Drawing.Point(9, 75);
-            this.radioButtonMySQL.Name = "radioButtonMySQL";
-            this.radioButtonMySQL.Size = new System.Drawing.Size(59, 17);
-            this.radioButtonMySQL.TabIndex = 26;
-            this.radioButtonMySQL.TabStop = true;
-            this.radioButtonMySQL.Text = "MySQL";
-            this.radioButtonMySQL.UseVisualStyleBackColor = true;
-            this.radioButtonMySQL.Visible = false;
-            // 
             // checkboxManually
             // 
             this.checkboxManually.AutoSize = true;
             this.checkboxManually.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkboxManually.Location = new System.Drawing.Point(517, 23);
             this.checkboxManually.Name = "checkboxManually";
-            this.checkboxManually.Size = new System.Drawing.Size(65, 17);
+            this.checkboxManually.Size = new System.Drawing.Size(76, 19);
             this.checkboxManually.TabIndex = 8;
             this.checkboxManually.Text = "Manually";
             this.checkboxManually.UseVisualStyleBackColor = true;
@@ -1313,7 +1153,7 @@
             this.radioButtonSQL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonSQL.Location = new System.Drawing.Point(9, 58);
             this.radioButtonSQL.Name = "radioButtonSQL";
-            this.radioButtonSQL.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonSQL.Size = new System.Drawing.Size(44, 19);
             this.radioButtonSQL.TabIndex = 6;
             this.radioButtonSQL.TabStop = true;
             this.radioButtonSQL.Text = "SQL";
@@ -1327,7 +1167,7 @@
             this.radioButtonODBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButtonODBC.Location = new System.Drawing.Point(9, 41);
             this.radioButtonODBC.Name = "radioButtonODBC";
-            this.radioButtonODBC.Size = new System.Drawing.Size(54, 17);
+            this.radioButtonODBC.Size = new System.Drawing.Size(55, 19);
             this.radioButtonODBC.TabIndex = 5;
             this.radioButtonODBC.TabStop = true;
             this.radioButtonODBC.Text = "ODBC\r\n";
@@ -1409,9 +1249,6 @@
             this.Name = "frmMain";
             this.Text = "Beta001";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRegistercheck3)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panelDropeditor.ResumeLayout(false);
@@ -1443,32 +1280,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblInfologingregister;
-        private System.Windows.Forms.Label lblRegisterlogin;
-        private System.Windows.Forms.GroupBox gbLogin;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblLoginpassword;
-        private System.Windows.Forms.Label lblLoginusername;
-        private System.Windows.Forms.Button btnLoginlogin;
-        private System.Windows.Forms.CheckBox checkboxRememberme;
-        private System.Windows.Forms.GroupBox gbRegister;
-        private System.Windows.Forms.TextBox txtRegisterusername;
-        private System.Windows.Forms.TextBox txtRegisterpassword;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtRegisteremail;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtRegistersecuritycode;
-        private System.Windows.Forms.Button btnRegisterinsert;
-        private System.Windows.Forms.PictureBox pictureboxRegistercheck1;
-        private System.Windows.Forms.PictureBox pictureboxRegistercheck2;
-        private System.Windows.Forms.PictureBox pictureboxRegistercheck3;
-        private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.Button btnRecover;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.GroupBox gbRecover;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label14;
@@ -1540,7 +1351,6 @@
         private System.Windows.Forms.RichTextBox richtextboxDebugger;
         private System.Windows.Forms.Button btnCopydebugger;
         private System.Windows.Forms.GroupBox gbConnect;
-        private System.Windows.Forms.RadioButton radioButtonMySQL;
         private System.Windows.Forms.CheckBox checkboxManually;
         private System.Windows.Forms.Label lblDBUsername;
         private System.Windows.Forms.Label lblDBPassword;

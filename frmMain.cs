@@ -87,7 +87,7 @@ namespace MysteryGuest_INC
                     radioButtonSQL.Checked = true;
                     break;
 
-                default: // ODBC, unknown... and since MySQL remains unsupported, MySQL too. At least, for now.
+                default: // ODBC, unknown...
                     radioButtonODBC_CheckedChanged(sender, e); // ODBC is default, so we don't need to set it (just trigger the event)
                     break;
             }
@@ -163,49 +163,35 @@ namespace MysteryGuest_INC
             // If button text is "Get DB", after this user will be able to test this connection.
             if (btnTestconnection.Text == "Get DB")
             {
-                if (radioButtonODBC.Checked || radioButtonSQL.Checked)
+                comboboxDatabase.Enabled = true;
+                comboboxDatabase.Items.Clear();
+
+                try
                 {
-                    comboboxDatabase.Enabled = true;
-                    comboboxDatabase.Items.Clear();
-
-                    try
+                    var dbConnection = DatabaseManager.CreateConnection(radioButtonODBC.Checked ? ConnectionType.ConnTypeODBC : ConnectionType.ConnTypeSQL, txtServername.Text, txtUsername.Text, txtPassword.Text);
+                    using (var dbReader = dbConnection.Lookup("SELECT name FROM master..sysdatabases"))
                     {
-                        var dbConnection = DatabaseManager.CreateConnection(radioButtonODBC.Checked ? ConnectionType.ConnTypeODBC : ConnectionType.ConnTypeSQL, txtServername.Text, txtUsername.Text, txtPassword.Text);
-                        using (var dbReader = dbConnection.Lookup("SELECT name FROM master..sysdatabases"))
-                        {
-                            while (dbReader.Read())
-                                comboboxDatabase.Items.Add(dbReader.GetString(0));
-                        }
+                        while (dbReader.Read())
+                            comboboxDatabase.Items.Add(dbReader.GetString(0));
+                    }
 
-                        comboboxDatabase.SelectedIndex = 0;
-                        btnTestconnection.Text = "Test";
-                        dbConnection.Close();
-                    }
-                    catch (Exception ex)
-                    {
-                        AppendInfoBox(ex.Message);
-                        comboboxDatabase.Enabled = false;
-                    }
+                    comboboxDatabase.SelectedIndex = 0;
+                    btnTestconnection.Text = "Test";
+                    dbConnection.Close();
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("MySQL is currently unsupported.");
+                    AppendInfoBox(ex.Message);
+                    comboboxDatabase.Enabled = false;
                 }
             }
             else if (btnTestconnection.Text == "Test")
             {
-                if (radioButtonODBC.Checked || radioButtonSQL.Checked)
-                {
-                    DatabaseManager.GameDB = ConnectToDatabase(DatabaseType.DatabaseTypeGame, 
-                        radioButtonODBC.Checked ? ConnectionType.ConnTypeODBC : ConnectionType.ConnTypeSQL);
+                DatabaseManager.GameDB = ConnectToDatabase(DatabaseType.DatabaseTypeGame, 
+                    radioButtonODBC.Checked ? ConnectionType.ConnTypeODBC : ConnectionType.ConnTypeSQL);
 
-                    if (DatabaseManager.GameDB != null)
-                        btnTestconnection.Text = "Use";
-                }
-                else
-                {
-                    MessageBox.Show("MySQL is currently unsupported.");
-                }
+                if (DatabaseManager.GameDB != null)
+                    btnTestconnection.Text = "Use";
             }
         }
 

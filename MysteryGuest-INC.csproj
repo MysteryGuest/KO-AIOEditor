@@ -50,9 +50,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mysql.data">
-      <HintPath>mysql\mysql.data.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.DirectoryServices" />
@@ -67,7 +64,6 @@
     <Compile Include="Database\DatabaseManager.cs" />
     <Compile Include="Database\DatabaseParameter.cs" />
     <Compile Include="Database\SQL\SQLDatabaseConnection.cs" />
-    <Compile Include="Database\MySQL\MySQLDatabaseConnection.cs" />
     <Compile Include="Database\ODBC\OdbcDatabaseConnection.cs" />
     <Compile Include="frmLoading.cs">
       <SubType>Form</SubType>

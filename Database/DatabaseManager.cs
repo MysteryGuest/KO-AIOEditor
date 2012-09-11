@@ -7,7 +7,6 @@ namespace MysteryGuest_INC
     {
         ConnTypeODBC,
         ConnTypeSQL,
-        ConnTypeMySQL,
         ConnTypeUnknown
     }
 
@@ -76,9 +75,6 @@ namespace MysteryGuest_INC
 
                 case ConnectionType.ConnTypeSQL:
                     return new SQLDatabaseConnection(serverName, user, pass, databaseName);
-
-                case ConnectionType.ConnTypeMySQL:
-                    return new MySQLDatabaseConnection(serverName, user, pass, databaseName);
             }
 
             return null; // no matching connection method
@@ -93,9 +89,6 @@ namespace MysteryGuest_INC
 
                 case "SQL":
                     return ConnectionType.ConnTypeSQL;
-
-                case "MYSQL":
-                    return ConnectionType.ConnTypeMySQL;
             }
 
             return ConnectionType.ConnTypeUnknown;
